@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <title>{{- .Title | default .Site.Title -}}</title>
+
+  {{ partial "head/preconnects.html" . }}
+
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/highlight.css">
+
+  {{ $tracking := resources.Get "js/t.js" }}
+
+  <link rel="preload" as="image" href="/logo.png">
+  <link rel="preload" as="script" href='{{ $tracking.Permalink }}'>
+
+  <script src="{{ $tracking.Permalink }}" data-site="YZRWTFHZ" defer></script>
+
+  <meta name="description" content="{{- .Description | default .Site.Params.Description -}}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{ partial "head/favicons.html" . }}
+
+  <meta name="apple-mobile-web-app-title" content="Blog | Usarral" />
+  <meta name="application-name" content="Blog | Usarral" />
+  <meta name="theme-color" content="#0099ff" />
+
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  <meta property="og:url" content="{{.Permalink}}" />
+  <meta property="og:type" content='{{ cond (isset .Params "tags") "article" "website" }}' />
+
+  {{ if isset .Params "audio" }}
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:player:stream" content="{{ .Params.audio }}" />
+  <meta name="twitter:player:stream:content_type" content="audio/mp4" />
+  <meta name="twitter:player" content='{{ .Permalink }}' />
+  <meta name="twitter:player:width" content="702" />
+  <meta name="twitter:player:height" content="223" />
+  {{ else }}
+  <meta name="twitter:card" content="summary_large_image" />
+  {{ end }}
+
+  <meta name="twitter:creator" content="@usarral_" />
+  <meta name="twitter:domain" content="usarr.tech" />
+
+  {{ $image := .Site.Params.Image }}
+
+  {{ if isset .Params "image" }}
+  {{ if in .Params.image "https://" }}
+  {{ $image = .Params.image }}
+  {{ else }}
+  {{ $image = (print .Site.BaseURL .Params.image) }}
+  {{ end }}
+  {{ else if isset .Params "tags" }}
+  {{ $tag := index (.Params.tags) 0}}
+  {{ $title := .Title }}
+  {{ $subtitle := (print .ReadingTime " minutos de lectura" ) }}
+  {{ $image = (print .Site.BaseURL "api/og/?tag=" $tag "&title=" $title "&subtitle=" $subtitle) | safeHTML }}
+  {{ end }}
+
+  <meta name="twitter:image" content="{{ $image }}" />
+  <meta name="twitter:site" content="@usarral_" />
+
+  <link rel="manifest" href="/manifest.json" />
+
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
+  <meta property="og:image" content="{{ $image | safeHTMLAttr }}" />
+  <meta property="og:description" content="{{- .Description | default .Site.Params.Description -}}" />
+  <meta property="og:site_name" content="Blog | Usarral" />
+
+  {{ if isset .Params "tags" }}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{ .Title }}",
+      "image": ["{{ $image }}"],
+      "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"
+    }
+  </script>
+  {{ end }}
+</head>
+
+<body class='{{ cond (isset .Params "audio") "body-player" ""}}'>
+  <style>
+    #live {
+      background: #9046ffc2;
+      display: none;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      padding: 8px;
+      animation: background 3s ease infinite;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      border-radius: 8px;
+      z-index: 99;
+      box-shadow: 0px 0px 100px 5px rgba(140, 0, 255, 0.52);
+    }
+
+    #live-frame {
+      aspect-ratio: 16/9;
+    }
+
+    #live-description {
+      padding-top: 4px;
+      font-size: 14px;
+    }
+
+    #live a {
+      color: #ffffff;
+      border-bottom: 2px solid #eee;
+    }
+
+    #live button {
+      position: absolute;
+      right: 8px;
+      top: -8px;
+      border-radius: 9999px;
+      border: 0;
+      font-weight: bold;
+      padding: 4px 8px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    #live button:hover {
+      background: rgb(255, 255, 191);
+    }
+
+    @keyframes background {
+      0% {
+        background: #9046ffc2;
+      }
+
+      50% {
+        background: #d146ff;
+      }
+
+      100% {
+        background: #9046ffc2;
+      }
+    }
+  </style>
+
+
+  </div>
+  <header class='header'>
+    <div class='header-inner u-center'>
+      {{ partial "logo.html" }}
+    </div>
+  </header>
+  <div class='body u-center'>
+    {{ block "main" . }}
+    {{ end }}
+  </div>
+  {{ partial "footer.html" . }}
+
+  {{ $js := resources.Get "js/scripts.js" }}
+  {{ $script := $js | resources.Minify }}
+  <script>{ { $script.Content | safeJS } }</script>
+</body>
+
+</html>

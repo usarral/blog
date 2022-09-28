@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://blog.usarr.tech
+
+# Sitemaps
+Sitemap: https://blog.usarr.tech/sitemap.xml

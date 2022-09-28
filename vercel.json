@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/twitter/",
+      "destination": "https://twitter.com/usarral"
+    },
+    {
+      "source": "/linkedin/",
+      "destination": "https://linkedin.com/in/usarral"
+    },
+    {
+      "source": "/github/",
+      "destination": "https://github.com/usarral"
+    },
+    {
+      "source": "/youtube/",
+      "destination": "https://www.youtube.com/channel/UCHarnqEHtcQ616mopL_pjmg/?sub_confirmation=1"
+    }
+  ]
+}

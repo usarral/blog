@@ -1,0 +1,11 @@
+<figure {{ with .Get "align" }}class='{{ . }}'{{ end }}>
+  <img
+    {{ with .Get "alt" }}alt='{{.}}'{{ end }}
+    loading='lazy'
+    decoding="async"
+    src='{{ .Get "src" }}'
+  />
+  {{ with .Get "alt"}}
+  <figcaption>{{.}}</figcaption>
+  {{ end }}
+</figure>

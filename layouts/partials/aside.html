@@ -1,0 +1,10 @@
+<aside id='aside'>
+  {{ if (.Params.toc) }}
+  <h3 class='section-title'>Contenido del artículo</h3>
+  {{.TableOfContents}}
+  <hr class='section-separation' />
+  {{ end }}
+
+  <hr class='section-separation' />
+
+</aside>
