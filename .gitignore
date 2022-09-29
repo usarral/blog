@@ -7,6 +7,6 @@ package-lock.json
 .now
 .env
 .lighthouseci
-
+.vscode
 .vercel
 .hugo_build.lock
