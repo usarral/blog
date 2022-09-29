@@ -100,6 +100,7 @@ Nuestro sitio ya esta creado, pero de momento no es funcional. Para que este pue
  Como ejemplo voy a usar el tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod), pero hay muchos por internet que podemos usar. Para instalar el tema lo que haremos en este caso (cada tema puede tener su propio método de instalación, pero la mayoría son de esta manera)
 
 ```sh
+echo "theme = 'hugo-PaperMod'" >> config.toml
 cd themes
 #Clonamos o descargamos en esta carpeta el tema que nos guste.
 git clone https://github.com/adityatelange/hugo-PaperMod
@@ -108,6 +109,8 @@ cd hugo-PaperMod
 # Borramos de este tema la carpeta .git para que no nos cause problemas
 #a la hora de subir nuestra pagina
 rm -rf .git
+
+ 
 ```
 
 Con esto ya tendremos el tema instalado y podremos arrancar nuestro sitio usando
