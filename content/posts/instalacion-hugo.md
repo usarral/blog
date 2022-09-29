@@ -80,6 +80,7 @@ brew install hugo
 ````
 
 ## Creación del sitio con Hugo
+
 ### Creando el sitio
 
 Siguiendo el tutorial anterior ya deberíamos tener instalado Hugo en nuestro sistema.
@@ -97,6 +98,7 @@ Nuestro sitio ya esta creado, pero de momento no es funcional. Para que este pue
 ### Instalando un tema en el sitio
 
  Como ejemplo voy a usar el tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod), pero hay muchos por internet que podemos usar. Para instalar el tema lo que haremos en este caso (cada tema puede tener su propio método de instalación, pero la mayoría son de esta manera)
+
 ```sh
 cd themes
 #Clonamos o descargamos en esta carpeta el tema que nos guste.
@@ -109,9 +111,11 @@ rm -rf .git
 ```
 
 Con esto ya tendremos el tema instalado y podremos arrancar nuestro sitio usando
+
 ```sh
 hugo-server
 ```
+
 Después de arrancarlo el comando nos devolverá una URL en la cual podremos ver nuestro sitio mientras este servidor este encendido.
 
 ### Creación de artículos en Hugo
@@ -127,6 +131,7 @@ Para subir nuestro sitio vamos a usar como hosting Github, una plataforma de có
 Necesitaremos una cuenta de [Github]("https://github.com") y el programa [GIT]("https://git-scm.com/downloads").
 
 Pasos para subir nuestra pagina a github usando el protocolo GIT.
+
 ```sh
 # Estos comandos se ejecutan desde la raíz o carpeta base de nuestro sitio.
 # Primero inicializaremos un repositorio.
@@ -153,6 +158,7 @@ git push -u origin main
 Ya tenemos nuestro código subido en Github, ahora vamos a despegarlo.
 
 ### Despliegue en Vercel
+
 Primero crearemos una cuenta en [Vercel](https://vercel.com), para ello podemos utilizar nuestra cuenta de Github.
 
 Una vez dentro de nuestra cuenta de Vercel crearemos un nuevo proyecto.
