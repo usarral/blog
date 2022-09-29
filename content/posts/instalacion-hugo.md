@@ -82,11 +82,12 @@ brew install hugo
 ## Creación del sitio con Hugo
 ### Creando el sitio
 
-Siguiendo el tutorial anterior ya deberiamos tener instalado Hugo en nuestro sistema.
+Siguiendo el tutorial anterior ya deberíamos tener instalado Hugo en nuestro sistema.
 
 Ahora para crear un sitio con el CMS utilizaremos los comando:
 
 ```sh
+# AVISO ESTOS COMANDOS DEBEN REALIZARSE DESDE NUESTRO USUARIO HABITUAL, NUNCA DESDE SUDO
 hugo new site nombredelsitio
 cd nombredelsitio
 ```
@@ -111,9 +112,9 @@ Con esto ya tendremos el tema instalado y podremos arrancar nuestro sitio usando
 ```sh
 hugo-server
 ```
-Despues de arrancarlo el comando nos devolverá una URL en la cual podremos ver nuestro sitio mientras este servidor este encendido.
+Después de arrancarlo el comando nos devolverá una URL en la cual podremos ver nuestro sitio mientras este servidor este encendido.
 
-### Creación de articulos en Hugo
+### Creación de artículos en Hugo
 
 Para crear artículos en Hugo deberemos dirigirnos a la carpeta content, y dentro en la carpeta post podremos empezar a escribir estos en formato *MarkDown* o *MD* para abreviar.
 
@@ -121,19 +122,19 @@ Mientras nosotros escribimos este se ira añadiendo al sitio y sera visible en n
 
 ### Subir a internet nuestro sitio y publicarlo gratis
 
-Para subir nuestro sitio vamos a usar como hosting Github, una plataforma de codigo en el cual nos deja subir archivos estáticos.
+Para subir nuestro sitio vamos a usar como hosting Github, una plataforma de código en el cual nos deja subir archivos estáticos.
 
 Necesitaremos una cuenta de [Github]("https://github.com") y el programa [GIT]("https://git-scm.com/downloads").
 
 Pasos para subir nuestra pagina a github usando el protocolo GIT.
 ```sh
-# Estos comandos se ejecutan desde la raiz o carpeta base de nuestro sitio.
+# Estos comandos se ejecutan desde la raíz o carpeta base de nuestro sitio.
 # Primero inicializaremos un repositorio.
 git init
 # Añadiremos nuestros archivos a la Staging Area
 git add *
 # =============
-# AVISO: Estos comandos (git config) que estan serparados solo deberan
+# AVISO: Estos comandos (git config) que están separados solo deberán
 #ejecutarse la primera vez que configuremos git.
 git config user.name "TU NOMBRE"
 git config user.email "TU EMAIL"
@@ -142,12 +143,29 @@ git config user.email "TU EMAIL"
 git commit -m "primer commit"
 #Iremos a nuestra cuenta de github y crearemos un repositorio.
 # Configuraremos el repositorio remoto de destino, 
-#esta url nos la proporcioanrá github cuando creemos el repositorio.
+#esta url nos la proporcionará github cuando creemos el repositorio.
 git remote add origin urldegithub
 git branch -M main
 # Por ultimo mandaremos los cambios al servidor.
 git push -u origin main
 ```
 
-Ya tenemos nuestro codigo subido en Github, ahora vamos a desplegarlo.
+Ya tenemos nuestro código subido en Github, ahora vamos a despegarlo.
 
+### Despliegue en Vercel
+Primero crearemos una cuenta en [Vercel](https://vercel.com), para ello podemos utilizar nuestra cuenta de Github.
+
+Una vez dentro de nuestra cuenta de Vercel crearemos un nuevo proyecto.
+En origen del proyecto le diremos que lo queremos importar de Github.
+
+Este automáticamente detectará que estamos utilizando Hugo y nos configurará todo.
+
+Hay veces que en el despliegue falla por la versión por defecto de Hugo, si nos da un error lo que debemos hacer es en la sección Environment Variables definimos una variable HUGO_VERSION con la versión que estamos utilizando en local. Para saber esta versión usamos en nuestra maquina el comando
+
+```sh
+hugo version
+```
+
+Y con esto pulsamos deploy en cuestión de unos segundos nuestra pagina se desplegará y nos dará una URL la cual sera nuestra dirección publica de la web.
+
+Para actualizar el sitio simplemente actualizando los archivos en Github y en cuestión de unos minutos Vercel automáticamente detectará los cambios y nos desplegará los cambios.
