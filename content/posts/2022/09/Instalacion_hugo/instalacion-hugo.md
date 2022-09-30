@@ -1,7 +1,7 @@
 ---
 title: "Instalación de Hugo CMS y creación de sitio básico con plantilla"
 date: 2022-09-28
-topic: javascript
+topic: terminal
 toc: true
 tags:
     - terminal
