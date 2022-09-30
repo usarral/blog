@@ -33,3 +33,4 @@ home = ["HTML", "RSS", "Algolia"]
     isPlainText = true
     notAlternative = true
 
+
