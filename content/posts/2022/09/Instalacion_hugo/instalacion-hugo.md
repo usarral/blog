@@ -5,6 +5,7 @@ topic: javascript
 toc: true
 tags:
     - terminal
+    - servidor
 draft: false
 ---
 ## Instalación Hugo
