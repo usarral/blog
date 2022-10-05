@@ -1,0 +1,256 @@
+{{ define "main" }}
+
+
+<article id='article' itemscope itemtype="http://schema.org/Article">
+  <div id='article-content-wrapper'>
+    <div id='article-content'>
+      {{ if isset .Params "audio" }}
+      {{ else }}
+      <header id='article-header'>
+        {{ with .Param "tags" }}
+        {{ range first 1 . }}
+        <picture>
+          <img decoding="async" itemprop="image" alt='Imagen de la etiqueta {{ . }}' src='/images/tags/{{.}}.png'
+            width="48" height="48" />
+        </picture>
+        {{ end }}
+        {{ end }}
+        <div class='article-header-meta'>
+          <h1 itemprop="name">
+            {{ .Title }}
+          </h1>
+        </div>
+
+      </header>
+      {{ end }}
+
+      <div itemprop="articleBody">
+        {{ .Content }}
+
+        {{ range $.Site.Data.tv }}
+        <button type="button" class="collapsible">{{.name}}</button>
+        <div class="content">
+          <div style="display:inline-block;">
+            {{range .channels}}
+            <a href="{{.url}}" target="_blank">
+              <img src="{{.logo}}" alt="Logo de {{.name}}" style="max-width: 50px; max-height: 50px;">
+            </a>
+            <br>
+            {{end}}
+          </div>>
+        </div> {{ end }}
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+</article>
+
+{{ if (.Params.toc) }}
+<style>
+  #TableOfContents-container {
+    display: none;
+  }
+
+  @media (min-width: 1300px) {
+    #TableOfContents-container {
+      display: block;
+      position: fixed;
+      right: 32px;
+    }
+
+    #TableOfContents-container h3 {
+      font-size: 14px;
+      padding-bottom: 8px;
+    }
+
+    #TableOfContents ul {
+      list-style: none;
+      padding-left: 0;
+      padding-bottom: 0;
+      max-width: 200px;
+    }
+
+    #TableOfContents ul li {
+      margin-bottom: 8px;
+    }
+
+    #TableOfContents ul li.active a {
+      background-color: rgb(208, 237, 255);
+    }
+
+    #TableOfContents ul ul {
+      list-style: none;
+      color: #444;
+      padding-left: 8px;
+      margin-top: 8px;
+    }
+
+    #TableOfContents ul ul li:before {
+      content: '-';
+      padding-right: 4px;
+    }
+
+    #TableOfContents a {
+      color: #555;
+      display: inline;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    #TableOfContents a code {
+      font-size: 12px;
+    }
+
+    #TableOfContents a:hover {
+      background-color: rgb(208, 237, 255);
+    }
+
+    #TableOfContents ul ul a {
+      color: #777;
+    }
+  }
+</style>
+<div id="TableOfContents-container">
+  <h3>Contenido del artículo</h3>
+  {{.TableOfContents}}
+</div>
+{{ end }}
+
+{{ if (.Params.description) }}
+<style>
+  #share {
+    bottom: 16px;
+    left: 0;
+    display: flex;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  #share a {
+    background: #fff;
+    border-radius: 32px;
+    bottom: 0;
+    box-shadow: rgba(100, 110, 140, .4) 0px 6px 21px 2px;
+    color: #333;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 16px;
+    padding: 8px 16px;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  }
+
+  #share a:hover {
+    background: rgb(220, 241, 255);
+  }
+
+  #share svg {
+    align-self: center;
+    display: inline-flex;
+    margin-left: 4px;
+  }
+</style>
+<div id='share'>
+  <a target='_blank' rel='nofollow noopener'
+    href='https://twitter.com/share?url={{.Permalink}}&text="{{ .Title }}" por @usarral_'>
+    <span>Comparte el artículo</span>
+    {{ partial "icons/twitter.html" }}
+  </a>
+</div>
+{{ end }}
+<style>
+  /* The collapsible section style*/
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active,
+  .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+</style>
+
+<script>
+  /*Dropdown interaction*/
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+<style>
+  .content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+  }
+</style>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>
+
+{{ end }}

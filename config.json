@@ -1,0 +1,61 @@
+{
+    "baseURL": "https://blog.usarr.tech",
+    "defaultContentLanguage": "es",
+    "languageCode": "es",
+    "title": "Blog | Usarral",
+    "disableHugoGeneratorInject": true,
+    "preserveTaxonomyNames": true,
+    "paginate": 7,
+    "permalinks": {
+        "posts": "/:filename/"
+    },
+    "markup": {
+        "highlight": {
+            "guessSyntax": true,
+            "noClasses": false,
+            "tabWidth": 2
+        },
+        "goldmark": {
+            "renderer": {
+                "unsafe": true
+            }
+        }
+    },
+    "outputs": {
+        "home": [
+            "HTML",
+            "RSS",
+            "Algolia"
+        ]
+    },
+    "outputFormats": {
+        "Algolia": {
+            "baseName": "algolia",
+            "isPlainText": true,
+            "mediaType": "application/json",
+            "notAlternative": true
+        }
+    },
+    "languages": {
+        "es": {
+            "languageName": "ES",
+            "title": "Blog | Usarral",
+            "weight": 1,
+            "params": {
+                "description": "Blog desarrollado en la asignatura Desarrollo en Entorno Servidor 2022-2023 en el CPIFP Los Enlaces",
+                "image": "/favicon/apple-touch-icon.png",
+                "cookieMessage": "Este sitio web utiliza cookies para mejorar su experiencia. Asumiremos que está de acuerdo con esto, pero puede optar por no participar si lo desea."
+            }
+        },
+        "en": {
+            "languageName": "EN",
+            "title": "Blog | Usarral",
+            "weight": 2,
+            "params": {
+                "description": "Blog developed in the subject Development in a Server Environment 2022-2023 at the CPIFP Los Enlaces",
+                "image": "/favicon/apple-touch-icon.png",
+                "cookieMessage": "This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish."
+            }
+        }
+    }
+}
