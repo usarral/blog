@@ -55,12 +55,12 @@ Para instalar docker en Windows
 
 1. Vamos a la pagina de [Docker](https://docker.com).
 
-   ![Captura de la web de Docker con el botón de descarga para Windows](https://imgur.com/gw33a0D)
+   ![Captura de la web de Docker con el botón de descarga para Windows](https://i.imgur.com/gw33a0D.png)
 2. Pulsamos en descargar para Windows
 3. Una vez descargado seguimos el instalador.
 4. Antes de poder ejecutar deberemos instalar tambien el Kernel WSL2 el cual podemos descargar [Aquí](https://aka.ms/wsl2kernel)
 
-    ![Captura del enlace de descarga del Kernel WSL2 desde la pagina de Microsoft](https://imgur.com/a/HnBiCAZ)
+    ![Captura del enlace de descarga del Kernel WSL2 desde la pagina de Microsoft](https://i.imgur.com/ntfA7G7.png)
 
 5. Instalaremos este paquete que nos permitirá la virtualización de Docker
 
