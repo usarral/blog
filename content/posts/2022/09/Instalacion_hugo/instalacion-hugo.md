@@ -132,7 +132,7 @@ Mientras nosotros escribimos este se ira añadiendo al sitio y sera visible en n
 
 Para subir nuestro sitio vamos a usar como hosting Github, una plataforma de código en el cual nos deja subir archivos estáticos.
 
-Necesitaremos una cuenta de [Github]("https://github.com") y el programa [GIT]("https://git-scm.com/downloads").
+Necesitaremos una cuenta de [Github](https://github.com) y el programa [GIT](https://git-scm.com/downloads).
 
 Pasos para subir nuestra pagina a github usando el protocolo GIT.
 
