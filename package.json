@@ -8,7 +8,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "build": "ALGOLIA_ADMIN_API_KEY=$ALGOLIA_ADMIN_API_KEY && hugo --minify && npm install && npm run index-articles",
+    "buildfix": "ALGOLIA_ADMIN_API_KEY=$ALGOLIA_ADMIN_API_KEY && hugo --minify && npm install && npm run index-articles",
+    "build": "hugo --minify",
     "index-articles": "node scripts/index-algolia-posts.cjs",
     "dev": "hugo server -F",
     "now-build": "npm run build"

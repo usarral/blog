@@ -27,6 +27,6 @@ parse('https://blog.usarr.tech/index.xml').then(rss => {
         }
     }
     )
-    index.saveObjects(posts, { autoGenerateObjectIDIfNotExist: true })
+    //Use addObjects to add the array of posts to the index
 
 })
