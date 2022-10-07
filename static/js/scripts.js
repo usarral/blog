@@ -202,9 +202,9 @@ if ($share) {
 
   observer.observe(elementToObserve)
 }
-
-const ALGOLIA_APPLICATION_ID = 'QK9VV9YO5F'
-const ALGOLIA_SEARCH_ONLY_API_KEY = '247bb355c786b6e9f528bc382cab3039'
+/* ALGOLIA */
+const ALGOLIA_APPLICATION_ID = 'OK2MQNJFKT'
+const ALGOLIA_SEARCH_ONLY_API_KEY = '368a90db6c2bbbf3ae2b733424f3a0f0'
 let algoliaIndex
 
 const $form = $('.ais-SearchBox-form')
