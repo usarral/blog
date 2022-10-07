@@ -51,6 +51,7 @@ reboot now
 ```
 
 ### Windows
+
 Para instalar docker en Windows
 
 1. Vamos a la pagina de [Docker](https://docker.com).
@@ -64,9 +65,20 @@ Para instalar docker en Windows
 
 5. Instalaremos este paquete que nos permitirá la virtualización de Docker
 
-<!-- ```zsh
+## Comandos básicos Docker
+
+```sh
 # Crear contenedor docker:
 docker run -ti --name web ubuntu:latest
+# Crear contenedor con puerto abierto:
+# El formato es PuertoLocal:PuertoContenedor
+# Con esto si nos conectamos a localhost:8000 
+#desde nuestro navegador nos estariamos conectando
+#al puerto 80 del contenedor
+docker run --name web2 -ti -p 8000:80 web:v1
+# Crear contenedor con carpeta compartida
+# El formato es CarpetaLocal:CarpetaEnContenedor
+docker run -ti --name web -ti -p 8000:80 -v C:\\Docker\\web:/var/www/html web:v1
 # Crear imagen desde contenedor:
 # Si estamos en el contenedor salimos
 # docker commit -m "Commit" nombrecontenedor repositorio:tag
@@ -75,10 +87,11 @@ docker commit -m "Imagen con apache" web web:v1
 docker images
 # Ver contenedores
 docker ps -a
-# Crear contenedor con puerto abierto:
-docker run --name web2 -ti -p 8000:80 web:v1
+
 # Borrar contenedor
 docker rm web
 # Conectar a contenedor ya iniciado
 docker exec -ti web bash
-``` -->
+
+
+```
