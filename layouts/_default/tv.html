@@ -24,20 +24,22 @@
       </header>
       {{ end }}
 
-      <div itemprop="articleBody">
+      <div itemprop="articleBody" id="tvs">
         {{ .Content }}
 
         {{ range $.Site.Data.tv }}
         <button type="button" class="collapsible">{{.name}}</button>
         <div class="content">
-          <div style="display:inline-block;">
+          <div style="display: flex;flex-direction: row;">
             {{range .channels}}
+
             <a href="{{.url}}" target="_blank">
-              <img src="{{.logo}}" alt="Logo de {{.name}}" style="max-width: 50px; max-height: 50px;">
+              <img src="{{.logo}}" alt="Logo de {{.name}}" style="max-width: 100px; max-height: 100px;">
+
             </a>
             <br>
             {{end}}
-          </div>>
+          </div>
         </div> {{ end }}
       </div>
 
@@ -167,6 +169,9 @@
 </div>
 {{ end }}
 <style>
+  #tv div:nth-child(3n+1) {
+   clear:left;
+}
   /* The collapsible section style*/
   .collapsible {
     background-color: #eee;
@@ -204,7 +209,7 @@
     coll[i].addEventListener("click", function () {
       this.classList.toggle("active");
       var content = this.nextElementSibling;
-      if (content.style.display === "block") {
+      if (content.style.display === "inline") {
         content.style.display = "none";
       } else {
         content.style.display = "block";

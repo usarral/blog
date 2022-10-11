@@ -269,22 +269,6 @@
                 ]
             },
             {
-                "name": "UHD Spain",
-                "web": "http://player.uhdspain.com",
-                "logo": "https://i.ibb.co/PCK083P/UHD-Spain.png",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "http://18.168.248.67/webdav/UHDSpain_SDR.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": []
-            },
-            {
                 "name": "Ten",
                 "web": "https://tentv.es/",
                 "logo": "https://graph.facebook.com/televisionten/picture?width=200&height=200",
@@ -844,24 +828,6 @@
                 ]
             },
             {
-                "name": "AS",
-                "web": "https://as.com",
-                "logo": "https://graph.facebook.com/as/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "youtube",
-                        "url": "https://www.youtube.com/diarioas/live",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": [
-                    "EMB"
-                ]
-            },
-            {
                 "name": "El 10 del Bar\u00e7a",
                 "web": "https://xn--el10delbara-v9a.com",
                 "logo": "https://graph.facebook.com/El10delBarsa/picture?width=200&height=200",
@@ -870,24 +836,6 @@
                     {
                         "format": "youtube",
                         "url": "https://www.youtube.com/channel/UC4eDUzl7Ik9TlkltsqCXvDA/live",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": [
-                    "EMB"
-                ]
-            },
-            {
-                "name": "OKLIGA TV",
-                "web": "https://okliga.tv",
-                "logo": "https://pbs.twimg.com/profile_images/1415300818224521218/rPcuCB7E_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "youtube",
-                        "url": "https://www.youtube.com/channel/UC6RLLzXQJWy1yCAEysy1Wgw/live",
                         "geo2": null,
                         "res": null,
                         "lang": null
@@ -2431,22 +2379,7 @@
                     "NONAV"
                 ]
             },
-            {
-                "name": "TeleGilena",
-                "web": "http://www.telegilena.com/directo/",
-                "logo": "https://pbs.twimg.com/profile_images/1323402078153285632/xCLDLju__200x200.jpg",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "https://5940924978228.streamlock.net/Directo1/Directo1/master.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": []
-            },
+            
             {
                 "name": "Fuengirola TV",
                 "web": "https://fuengirolatv.com/streaming/",
@@ -2597,22 +2530,7 @@
                 ],
                 "extra_info": []
             },
-            {
-                "name": "Cancionero TV",
-                "web": "http://www.cancionero.es/tv/",
-                "logo": "https://www.cancionero.es/portal/images/imagesweb/LogoTV_Trans.png",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "http://89.140.229.4/hls/cancionero.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": []
-            },
+            
             {
                 "name": "Trebujena TV",
                 "web": "http://trebujena.tv",
@@ -3503,24 +3421,7 @@
                 ],
                 "extra_info": []
             },
-            {
-                "name": "987 Live",
-                "web": "http://987live.com",
-                "logo": "https://graph.facebook.com/987live/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "youtube",
-                        "url": "https://www.youtube.com/channel/UC41bdA6AiwEb34_S7KcMHOw/live",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": [
-                    "EMB"
-                ]
-            },
+            
             {
                 "name": "Canal 54",
                 "web": "https://www.canal54.es/directo/",
@@ -3654,36 +3555,7 @@
                 ],
                 "extra_info": []
             },
-            {
-                "name": "Super3",
-                "web": "https://www.ccma.cat/tv3/directe-avancat/super3",
-                "logo": "https://graph.facebook.com/clubsuper3/picture?width=200&height=200",
-                "epg_id": "C33.TV",
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "https://directes-tv-cat.ccma.cat/cat/ngrp:c33_web/playlist_DVR.m3u8",
-                        "geo2": "CAT",
-                        "res": null,
-                        "lang": null
-                    },
-                    {
-                        "format": "m3u8",
-                        "url": "https://directes-tv-es.ccma.cat/es/ngrp:c33_web/playlist_DVR.m3u8",
-                        "geo2": "SP",
-                        "res": null,
-                        "lang": null
-                    },
-                    {
-                        "format": "m3u8",
-                        "url": "https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist_DVR.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": []
-            },
+            
             {
                 "name": "CCMA Exclusiu 1",
                 "web": "https://www.ccma.cat/tv3/directe-avancat/exclusiu/oca1/",
@@ -5040,29 +4912,6 @@
                 "extra_info": [
                     "NONAV"
                 ]
-            },
-            {
-                "name": "Parlamento de Navarra",
-                "web": "https://www.parlamentodenavarra.es/",
-                "logo": "https://pbs.twimg.com/profile_images/781100367295676417/XVWdJQD0_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "https://broadcasting.parlamentodenavarra.es/live/canal1/master.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    },
-                    {
-                        "format": "m3u8",
-                        "url": "https://broadcasting.parlamentodenavarra.es/live/canal2/master.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": []
             }
         ]
     },
@@ -5393,40 +5242,6 @@
                     }
                 ],
                 "extra_info": []
-            },
-            {
-                "name": "Univers TV",
-                "web": "https://www.universvalencia.es/",
-                "logo": "https://graph.facebook.com/UniversValenciaMedia/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "https://cloud3.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": []
-            },
-            {
-                "name": "Elche 7 TV",
-                "web": "https://elche7tv.es/tv-en-directo/",
-                "logo": "https://pbs.twimg.com/profile_images/1350010679554695169/WXojvq15_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "https://elche7tv.gestec-video.com/hls/canal2.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": [
-                    "NONAV"
-                ]
             },
             {
                 "name": "TV Almassora",
@@ -6302,22 +6117,7 @@
     {
         "name": "R. de Murcia",
         "channels": [
-            {
-                "name": "7 R. de Murcia",
-                "web": "http://webtv.7tvregiondemurcia.es/",
-                "logo": "https://graph.facebook.com/La7TVRegiondeMurcia/picture?width=200&height=200",
-                "epg_id": "7RM.TV",
-                "options": [
-                    {
-                        "format": "m3u8",
-                        "url": "http://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8",
-                        "geo2": null,
-                        "res": null,
-                        "lang": null
-                    }
-                ],
-                "extra_info": []
-            },
+        
             {
                 "name": "TeleArchena",
                 "web": "https://telearchena.es",
