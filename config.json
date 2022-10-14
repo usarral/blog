@@ -7,8 +7,8 @@
     "preserveTaxonomyNames": true,
     "paginate": 7,
     "permalinks": {
-      "posts": ":title"
-   }
+        "posts": "/:filename/"
+    },
     "markup": {
         "highlight": {
             "guessSyntax": true,
