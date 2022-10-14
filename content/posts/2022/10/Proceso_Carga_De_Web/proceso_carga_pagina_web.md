@@ -26,3 +26,19 @@ Este lo que hace es cuando tu te conectas a la red, ya sea por wifi o por cable 
 ### El servidor DNS, el diccionario de las webs
 
 Como he explicado anteriormente intenet funciona por IPs, por lo tanto 
+
+<!-- PROCESO DE CARGA DE UNA PAGINA WEB
+1.	Se consulta al servidor DNS la ip del servidor del dominio solicitado
+2.	El Servidor DNS devuelve la IP al cliente
+3.	El PC cliente manda la solicitud al GATEWAY
+4.	EL Gateway hace NAT
+5.	Si existe CGNAT se hace el CGNAT
+6.	El cliente hace la solicitud al servidor haciendo el siguiente orden de prioridad:
+a.	Protocolo
+b.	Dominio
+c.	Puerto
+d.	Ruta
+e.	Parámetros
+7.	El servidor devuelve el recurso solicitado al GATEWAY
+8.	Se vuelve a hacer el CGNAT y el NAT en sentido contrario
+9.	Se le devuelve el recurso solicitado al cliente -->

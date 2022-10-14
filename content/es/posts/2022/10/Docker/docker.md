@@ -7,6 +7,7 @@ tags:
     - docker
     - servidor
 draft: false
+
 ---
 ## Instalación de Docker
 
@@ -93,8 +94,5 @@ docker rm web
 # Conectar a contenedor ya iniciado
 docker exec -ti web bash
 
+
 ```
-
-dsnkadn
-
-

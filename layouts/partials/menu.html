@@ -1,0 +1,16 @@
+{{- $currentPage := . }}
+<section class='u-center'>
+    {{- range site.Menus.main }}
+    {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+    {{- $page_url:= $currentPage.Permalink | absLangURL }}
+    {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+    <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" |
+        safeHTMLAttr) ("" | safeHTMLAttr ) }}" {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr )
+        }} rel="noopener nofollow" aria-label='Contacto'>
+        <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+            {{- .Name -}}
+        </span>
+
+    </a>
+    {{- end }}
+    <br>

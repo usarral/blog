@@ -267,53 +267,8 @@
   {{ end }}
 
 
-  <h3 class="section-title">Artículos por temas</h3>
-  <div id='topics'>
-
-    <a href='/tags/javascript/' class='topic' title='Artículos sobre JavaScript'>
-      <img decoding="async" alt='javascript' loading='lazy' src='/images/tags/javascript.png' width="48" height="48" />
-      <h4>JavaScript</h4>
-    </a>
-    <a href='/tags/svelte/' class='topic' title="Artículos sobre Svelte">
-      <img decoding="async" alt='svelte' loading='lazy' src='/images/tags/svelte.png' width="48" height="48" />
-      <h4>Svelte</h4>
-    </a>
-
-    <a href='/tags/css/' class='topic' title='Artículos sobre CSS'>
-      <img decoding="async" alt='css' loading='lazy' src='/images/tags/css.png' width="48" height="48" />
-      <h4>CSS</h4>
-    </a>
-    <a href='/tags/terminal/' class='topic' title='Artículos sobre Terminal'>
-      <img decoding="async" alt='terminal' loading='lazy' src='/images/tags/terminal.png' width="48" height="48" />
-      <h4>Terminal</h4>
-    </a>
-    <a href='/tags/node/' class='topic' title='Artículos sobre Node.js'>
-      <img decoding="async" alt='node' loading='lazy' src='/images/tags/node.png' />
-      <h4>Node.js</h4>
-    </a>
-  </div>
-  <h3 class="section-title">Artículos por categorias</h3>
-  <div id='topics'>
-
-    <a href='/tags/servidor/' class='topic' title='Artículos sobre JavaScript'>
-      <img decoding="async" alt='Servidor' loading='lazy' src='/images/tags/servidor.png' width="48" height="48" />
-      <h4>Servidor</h4>
-    </a>
-    <a href='/tags/cliente/' class='topic' title="Artículos sobre Cliente">
-      <img decoding="async" alt='Cliente' loading='lazy' src='/images/tags/cliente.png' width="48" height="48" />
-      <h4>Cliente</h4>
-    </a>
-
-    <a href='/tags/despliegue/' class='topic' title='Artículos sobre Despliegue'>
-      <img decoding="async" alt='css' loading='lazy' src='/images/tags/despliegue.png' width="48" height="48" />
-      <h4>Despliegue</h4>
-    </a>
-    <a href='/tags/interfaces/' class='topic' title='Artículos sobre Interfaces'>
-      <img decoding="async" alt='css' loading='lazy' src='/images/tags/interfaces.png' width="48" height="48" />
-      <h4>Interfaces</h4>
-    </a>
-
-  </div>
+  {{partial "partials/tags.html"}}
+  {{ partial "partials/categories.html"}}
 </main>
 {{ partial "aside.html" . }}
 {{ end }}

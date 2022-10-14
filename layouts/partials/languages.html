@@ -1,0 +1,18 @@
+{{- $lang := .Lang}}
+{{- with site.Home.AllTranslations }}
+<section class='u-center'>
+    {{- range . -}}
+    {{- if ne $lang .Lang }}
+    <a href="{{- .Permalink -}}"
+        title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
+        aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
+        {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
+        {{- .Language.LanguageName | emojify -}}
+        {{- else }}
+        {{- .Lang | title -}}
+        {{- end -}}
+    </a>
+    {{- end -}}
+    {{- end}}
+</section>
+{{- end }}

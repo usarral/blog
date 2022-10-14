@@ -93,8 +93,5 @@ docker rm web
 # Conectar a contenedor ya iniciado
 docker exec -ti web bash
 
+
 ```
-
-dsnkadn
-
-

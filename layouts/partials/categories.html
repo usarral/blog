@@ -1,0 +1,23 @@
+<h3 class="section-title">Artículos por categorias</h3>
+<div id='topics'>
+    {{- $currentPage := . }}
+
+    <a href='{{ "/tags" | relLangURL }}/servidor/' class='topic' title='Artículos sobre JavaScript'>
+        <img decoding="async" alt='Servidor' loading='lazy' src='/images/tags/servidor.png' width="48" height="48" />
+        <h4>Servidor</h4>
+    </a>
+    <a href='{{ "/tags" | relLangURL }}/cliente/' class='topic' title="Artículos sobre Cliente">
+        <img decoding="async" alt='Cliente' loading='lazy' src='/images/tags/cliente.png' width="48" height="48" />
+        <h4>Cliente</h4>
+    </a>
+
+    <a href='{{ "/tags" | relLangURL }}/despliegue/' class='topic' title='Artículos sobre Despliegue'>
+        <img decoding="async" alt='css' loading='lazy' src='/images/tags/despliegue.png' width="48" height="48" />
+        <h4>Despliegue</h4>
+    </a>
+    <a href='{{ "/tags" | relLangURL }}/interfaces/' class='topic' title='Artículos sobre Interfaces'>
+        <img decoding="async" alt='css' loading='lazy' src='/images/tags/interfaces.png' width="48" height="48" />
+        <h4>Interfaces</h4>
+    </a>
+
+</div>
