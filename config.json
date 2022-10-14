@@ -6,6 +6,9 @@
     "disableHugoGeneratorInject": true,
     "preserveTaxonomyNames": true,
     "paginate": 7,
+    "permalinks": {
+      "posts": ":title"
+   }
     "markup": {
         "highlight": {
             "guessSyntax": true,
