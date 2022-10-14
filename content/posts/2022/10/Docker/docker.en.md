@@ -1,5 +1,5 @@
 ---
-title: "Instalación de Docker y comandos básicos"
+title: "Docker Install and commands"
 date: 2022-10-07
 topic: docker
 toc: true
