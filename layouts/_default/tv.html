@@ -28,12 +28,14 @@
         {{ .Content }}
 
         {{ range $.Site.Data.tv }}
+
+
         <button type="button" class="collapsible">{{.name}}</button>
         <div class="content">
           <div style="display: flex;flex-direction: row;">
             {{range .channels}}
 
-            <a href="{{.url}}" target="_blank">
+            <a href="{{.web}}" target="_blank">
               <img src="{{.logo}}" alt="Logo de {{.name}}" style="max-width: 100px; max-height: 100px;">
 
             </a>
@@ -170,8 +172,9 @@
 {{ end }}
 <style>
   #tv div:nth-child(3n+1) {
-   clear:left;
-}
+    clear: left;
+  }
+
   /* The collapsible section style*/
   .collapsible {
     background-color: #eee;
