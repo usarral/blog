@@ -1,10 +1,5 @@
 # Hugo
-    - En el markdown, Han de aparecer imágenes, código fuente, listado, viñetas, negrita, ....
     - Tienes que usar al menos 3 shortcode
-    - Proceso de comunicación cliente/Servidor
-        - Realiza en un documento usando diagramas y detallando el proceso de carga de una página web
-            - Contempla la posibilidad de tener que ejecutar script tanto en cliente como en servidor
-            - Identifica en un bloque cada uno de los elementos (CLIENTE, SERVIDOR o MEDIOS) o programas necesarios (programa navegador, protocolo http en cliente, servidor dns, interprete de javaScript, ...)
     - A continuación te nombro varias herramientas/tecnologías para el desarrollo web. Agrega un nuevo fichero md en tu sitio web explicándolo.
         - Se trata de que las agrupes y hagas un par de frases de qué es cada cosa.
         - Usa tus propias palabras y aporta la url de su página oficial

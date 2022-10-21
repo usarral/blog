@@ -7,7 +7,6 @@ tags:
     - servidor
     - servidor
 draft: false
-hasMermaid: true
 ---
 
 Cuando nosotros queremos ver una página web, nosotros lo que hacemos es poner la dirección de esta en nuestro navegador, esperamos un par de segundos y esta como por arte de magia carga, pero... ¿Sabes realmente que es lo que hace de fondo el navegador?
@@ -31,44 +30,33 @@ Como he explicado anteriormente intenet funciona por IPs, por lo tanto es necesa
 
 ## El proceso de carga
 
-1. Cliente introduce la URI del servidor que quiere visitar
-2. PC Cliente manda solicitud al NAT del router
-3. Router hace NAT y realiza una solicitud al servidor DNS que esta configurado
-4. Servidor DNS busca en los registros y si no lo encuentra en sus registros, escala la solicitud a servidores DNS primarios hasta encontrarlo
-5. El Servidor DNS se encarga de devolver el registro al cliente (Este registro ha podido ser encontrado en el mismo servidor o puede ser el que le han devuelto los otros servidores DNS).
-6. Se devuelve el registro al router del cliente.
-7. El router realiza el NAT y se lo devuelve al PC CLIENTE.
-8. El PC del Cliente realiza la solicitud a la IP, que le ha devuelto el Servidor DNS, correspondiente al servidor del recurso solicitado.
-9. Se vuelve a mandar la solicitud al Router del CLIENTE que vuelve a hacer NAT.
-10. El Router del cliente realiza la solicitud al SERVIDOR WEB.
-11. El servidor atiende a la solicitud mediante el siguiente orden de prioridad:
-```mermaid
-graph TD
-    A[Protocolo]
-    B[Dominio]
-    C[Puerto]
-    D[Ruta]
-    E[Parámetros]
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-```
+1. PC CLIENTE introduce la URI del servidor que quiere visitar
+2. PC CLIENTE manda solicitud al NAT del ROUTER CLIENTE
+3. ROUTER CLIENTE hace NAT y realiza una solicitud al SERVIDOR DNS que esta configurado
+4. SERVIDOR DNS busca en los registros y si no lo encuentra en sus registros, escala la solicitud a servidores DNS primarios hasta encontrarlo
+5. El SERVIDOR DNS se encarga de devolver el registro al ROUTER CLIENTE (Este registro ha podido ser encontrado en el mismo servidor o puede ser el que le han devuelto los otros servidores DNS).
+6. Se devuelve el registro al ROUTER CLIENTE.
+7. El ROUTER CLIENTE realiza el NAT y se lo devuelve al PC CLIENTE.
+8. El PC CLIENTE realiza la solicitud a la IP, que le ha devuelto el Servidor DNS, correspondiente al servidor del recurso solicitado.
+9. Se vuelve a mandar la solicitud al ROUTER CLIENTE que vuelve a hacer NAT.
+10. El ROUTER CLIENTE realiza la solicitud al SERVIDOR WEB.
+11. El SERVIDOR atiende a la solicitud mediante el siguiente orden de prioridad:
 
-13.  
+    ```mermaid
+    flowchart LR;
+        A[Protocolo]
+        B[Dominio]
+        C[Puerto]
+        D[Ruta]
+        E[Parámetros]
+        A --> B
+        B --> C
+        C --> D
+        D --> E
+    ```
 
-<!-- PROCESO DE CARGA DE UNA PAGINA WEB
-1.	Se consulta al servidor DNS la ip del servidor del dominio solicitado
-2.	El Servidor DNS devuelve la IP al cliente
-3.	El PC cliente manda la solicitud al GATEWAY
-4.	EL Gateway hace NAT
-5.	Si existe CGNAT se hace el CGNAT
-6.	El cliente hace la solicitud al servidor haciendo el siguiente orden de prioridad:
-a.	Protocolo
-b.	Dominio
-c.	Puerto
-d.	Ruta
-e.	Parámetros
-7.	El servidor devuelve el recurso solicitado al GATEWAY
-8.	Se vuelve a hacer el CGNAT y el NAT en sentido contrario
-9.	Se le devuelve el recurso solicitado al cliente -->
+12. En caso de carga de pagina web por ejemplo al ver el protocolo http/https se mandará la petición al servicio apache2/nginx instalados en SERVIDOR, que son los que procesarán el resto de la petición.
+13. El servidor devuelve el recurso solicitado al ROUTER CLIENTE
+14. El ROUTER CLIENTE vuelve a realizar NAT
+15. El ROUTER CLIENTE devuelve la petición al PC CLIENTE
+
