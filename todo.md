@@ -1,13 +1,6 @@
-- Hugo
-    - Crear un sitio con Hugo @done
-    - Seleccionar un tema @done
-    - Pagina About Me
-    - Al menos 3 opciones en menú @done
-    - Traducido a 3 idiomas @done
+# Hugo
     - En el markdown, Han de aparecer imágenes, código fuente, listado, viñetas, negrita, ....
     - Tienes que usar al menos 3 shortcode
-    - hacer al menos un gráfico con mermaid @done
-    - Realiza una manual de cómo instalar hugo @done
     - Proceso de comunicación cliente/Servidor
         - Realiza en un documento usando diagramas y detallando el proceso de carga de una página web
             - Contempla la posibilidad de tener que ejecutar script tanto en cliente como en servidor

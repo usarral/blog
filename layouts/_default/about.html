@@ -1,0 +1,81 @@
+{{ define "main" }}
+
+
+<article id='article' itemscope itemtype="http://schema.org/Article">
+  {{ if isset .Params "audio" }}
+  {{ partial "audio-player.html" . }}
+  {{ partial "podcast-subscribe.html" }}
+  {{ else }}
+  {{ end }}
+
+  <div id='article-content-wrapper'>
+    <div id='article-content'>
+      {{ if isset .Params "audio" }}
+      {{ else }}
+      <header id='article-header'>
+        {{ with .Param "tags" }}
+        {{ range first 1 . }}
+        <picture>
+          <img decoding="async" itemprop="image" alt='Imagen de la etiqueta {{ . }}' src='/images/tags/{{.}}.png'
+            width="48" height="48" />
+        </picture>
+        {{ end }}
+        {{ end }}
+        <div class='article-header-meta'>
+          <h1 itemprop="name">
+            {{ .Title }}
+          </h1>
+          <div id='article-meta'>
+            {{ partial "article-meta.html" . }}
+          </div>
+        </div>
+
+      </header>
+      {{ end }}
+
+      <div itemprop="articleBody">
+        {{ .Content }}
+      </div>
+
+      <div id='article-pagination'>
+        {{ with .PrevPage }}
+        <a class='prev' href="{{.Permalink}}">
+          {{ with .Params.tags }}
+          {{$tag := index . 0 }}
+          <img decoding="async" alt="{{$tag}}" loading='lazy' src='/images/tags/{{$tag}}.png' width="64" height="64" />
+          {{ end }}
+          {{.Title}}
+        </a>
+        {{ end }}
+        {{ with .NextPage }}
+        <a class='next' href="{{.Permalink}}">
+          {{ with .Params.tags }}
+          {{$tag := index . 0 }}
+          <img decoding="async" alt="{{$tag}}" loading='lazy' src='/images/tags/{{$tag}}.png' width="64" height="64" />
+          {{ end }}
+          {{.Title}}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+</article>
+
+
+
+
+<style>
+  li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  li img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+</style>
+
+
+{{ end }}
