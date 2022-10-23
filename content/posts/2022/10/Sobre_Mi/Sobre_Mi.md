@@ -21,3 +21,8 @@ Soy un estudiante y desarrollador enfocado en webs y aplicaciones. Actualmente t
 - ![Firebase](https://usarr.tech/firebase.png)
 - ![OracleXE](https://usarr.tech/oraclexe.png)
 - ![MongoDB](https://usarr.tech/mongodb.png)
+
+---
+## Otros proyectos de interes:
+{{<youtube cxNo0E0FTDE >}}
+
