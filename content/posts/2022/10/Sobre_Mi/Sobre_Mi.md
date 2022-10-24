@@ -25,7 +25,7 @@ Soy un estudiante y desarrollador enfocado en webs y aplicaciones. Actualmente t
 - ![MongoDB](https://usarr.tech/mongodb.png)
 
 ---
-# Discord 
+## Discord 
 
 {{< discord-profile 496251940485988385 >}}
 ## Contribuciones en Github
