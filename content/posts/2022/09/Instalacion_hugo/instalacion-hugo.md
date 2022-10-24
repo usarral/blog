@@ -61,7 +61,7 @@ Una vez lo tengamos, en el buscador de Windows, accederemos a *Editar las variab
 
 Se nos abrirá una ventana llamada Propiedades del sistema y en esta volveremos a pulsar en *Variables de entorno*.
 
-En la lista que nos mostrará buscaremos la variable PATH, y al final de esta añadiremos ';C:\Hugo\bin'.
+En la lista que nos mostrará buscaremos la variable PATH, y al final de esta añadiremos 'C:\Hugo\bin'.
 
 Con esto reiniciando el sistema tendremos hugo instalado y accesible en nuestro sistema.
 

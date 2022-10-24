@@ -59,4 +59,3 @@ Como he explicado anteriormente intenet funciona por IPs, por lo tanto es necesa
 13. El servidor devuelve el recurso solicitado al ROUTER CLIENTE
 14. El ROUTER CLIENTE vuelve a realizar NAT
 15. El ROUTER CLIENTE devuelve la petición al PC CLIENTE
-

@@ -1,5 +1,5 @@
 ---
-title: "Instalación de Docker y comandos básicos"
+title: "Installation de Docker et commandes de base"
 date: 2022-10-07
 topic: docker
 toc: true
@@ -8,89 +8,89 @@ tags:
     - servidor
 draft: false
 ---
-## Instalación de Docker
+## Installation de Docker
 
-### Distros Linux con gestor de paquetes APT
+### Distributions Linux avec gestionnaire de packages APT
 
-Para instalar Docker en distros Linux como Ubuntu o Debian que tienen el gestor de paquetes APT podemos instalarlo con los siguientes comandos:
+Pour installer Docker sur des distributions Linux telles que Ubuntu ou Debian qui ont le gestionnaire de packages APT, nous pouvons l'installer avec les commandes suivantes :
 
 ```sh
-# Borrar las versiones anteriores:
-sudo apt-get remove docker docker-engine docker.io containerd runc
+# Supprimer les versions précédentes :
+sudo apt-get supprimer docker docker-engine docker.io containerd runc
 
-# Añadimos los paquetes para instalar agregar el repositorio de docker
-sudo apt-get install  ca-certificates   curl   gnupg-agent  lsb-release
+# Nous ajoutons les packages à installer ajouter le référentiel docker
+sudo apt-get install ca-certificates curl gnupg-agent lsb-release
 
-# Añadimos la clave GPG del repositorio de Docker
+# Ajouter la clé GPG du dépôt Docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-#Añadimos el repositorio a nuestro fichero souces.list, que es el lugar desde donde APT hace las consultas a los repositorios para descargar los programas
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+#Ajoutez le référentiel à notre fichier souces.list, qui est l'endroit à partir duquel APT interroge les référentiels pour télécharger les programmes
+chassèrent \
+  "deb [arch=$(dpkg --print-architecture) signé-par=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# Actualizamos los repositorios para que detecte el repositorio de docker
-sudo apt update
+# Nous mettons à jour les référentiels afin qu'il détecte le référentiel docker
+mise à jour sudo apt
 
-#Instalamos docker y sus dependencias
-sudo apt install docker-ce docker-ce-cli containerd.io
+#Installer docker et ses dépendances
+sudo apt installer docker-ce docker-ce-cli containerd.io
 ```
 
-Configuración para poder utilizar docker sin sudo
+Configuration pour pouvoir utiliser docker sans sudo
 
 ```sh
-# Agregamos el usuario al grupo Docker
- sudo usermod -a -G docker $USER
-# Para poder usarlo sin tener que reiniciar debemos usar el siguiente comando para "loguearnos" en el grupo en la sesion actual
-newgrp docker
-# Damos permisos al socket del demonio de Docker
+# Ajouter l'utilisateur au groupe Docker
+ sudo usermod -a -G menu fixe $USER
+# Pour pouvoir l'utiliser sans avoir à redémarrer, nous devons utiliser la commande suivante pour "se connecter" au groupe dans la session en cours
+menu fixe newgrp
+# Nous donnons des autorisations au socket du démon Docker
 sudo chmod 666 /var/run/docker.sock
 
-# Ya debería de funcionar Docker, si siguera sin funcionarnos deberemos reiniciar el sistema
-reboot now
+# Docker devrait déjà fonctionner, si cela ne fonctionne toujours pas, nous devrons redémarrer le système
+redémarrer maintenant
 ```
 
-### Windows
+### les fenêtres
 
-Para instalar docker en Windows
+Pour installer Docker sur Windows
 
-1. Vamos a la pagina de [Docker](https://docker.com).
+1. Accédez à la page [Docker] (<https://docker.com>).
 
-   ![Captura de la web de Docker con el botón de descarga para Windows](https://i.imgur.com/gw33a0D.png)
-2. Pulsamos en descargar para Windows
-3. Una vez descargado seguimos el instalador.
-4. Antes de poder ejecutar deberemos instalar tambien el Kernel WSL2 el cual podemos descargar [Aquí](https://aka.ms/wsl2kernel)
+   ![Capture d'écran Web Docker avec bouton de téléchargement pour Windows](https://i.imgur.com/gw33a0D.png)
+2. Cliquez sur télécharger pour Windows
+3. Une fois téléchargé, nous suivons le programme d'installation.
+4. Avant de pouvoir exécuter, nous devons également installer le noyau WSL2 que nous pouvons télécharger [ici] (<https://aka.ms/wsl2kernel>)
 
-    ![Captura del enlace de descarga del Kernel WSL2 desde la pagina de Microsoft](https://i.imgur.com/ntfA7G7.png)
+    ![Capture d'écran du lien de téléchargement du noyau WSL2 depuis la page Microsoft](https://i.imgur.com/ntfA7G7.png)
 
-5. Instalaremos este paquete que nos permitirá la virtualización de Docker
+5. Nous allons installer ce package qui nous permettra de virtualiser Docker
 
-## Comandos básicos Docker
+## Commandes Docker de base
 
 ```sh
-# Crear contenedor docker:
+# Créer un conteneur Docker :
 docker run -ti --name web ubuntu:latest
-# Crear contenedor con puerto abierto:
-# El formato es PuertoLocal:PuertoContenedor
-# Con esto si nos conectamos a localhost:8000 
-#desde nuestro navegador nos estariamos conectando
-#al puerto 80 del contenedor
+# Créer un conteneur avec un port ouvert :
+# Le format est LocalPort:ContainerPort
+# Avec ceci si nous nous connectons à localhost:8000
+#depuis notre navigateur, nous serions en train de nous connecter
+#au port à conteneurs 80
 docker run --name web2 -ti -p 8000:80 web:v1
-# Crear contenedor con carpeta compartida
-# El formato es CarpetaLocal:CarpetaEnContenedor
+# Créer un conteneur avec un dossier partagé
+# Le format est LocalFolder:FolderInContainer
 docker run -ti --name web -ti -p 8000:80 -v C:\\Docker\\web:/var/www/html web:v1
-# Crear imagen desde contenedor:
-# Si estamos en el contenedor salimos
-# docker commit -m "Commit" nombrecontenedor repositorio:tag
-docker commit -m "Imagen con apache" web web:v1 
-#Ver imagenes en docker:
-docker images
-# Ver contenedores
-docker ps -a
+# Créer une image à partir du conteneur :
+# Si nous sommes dans le conteneur nous sortons
+# docker commit -m "Commit" nom du conteneur repository:tag
+docker commit -m "Image avec apache" web web:v1
+#Afficher les images dans le docker :
+images de docker
+# afficher les conteneurs
+docker ps-a
 
-# Borrar contenedor
+# supprimer le conteneur
 docker rm web
-# Conectar a contenedor ya iniciado
+# Se connecter au conteneur déjà démarré
 docker exec -ti web bash
 
 
