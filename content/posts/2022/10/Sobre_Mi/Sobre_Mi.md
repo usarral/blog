@@ -10,6 +10,8 @@ layout: about
 ---
 Soy un estudiante y desarrollador enfocado en webs y aplicaciones. Actualmente trabajando en [Pedrotercero](https://pedrotercero.com)
 
+---
+
 ## Habilidades técnicas
 
 - ![Javascript](https://usarr.tech/js.png)
@@ -23,6 +25,13 @@ Soy un estudiante y desarrollador enfocado en webs y aplicaciones. Actualmente t
 - ![MongoDB](https://usarr.tech/mongodb.png)
 
 ---
-## Otros proyectos de interes:
-{{<youtube cxNo0E0FTDE >}}
+# Discord 
 
+{{< discord-profile 496251940485988385 >}}
+## Contribuciones en Github
+
+{{< github "usarral" >}}
+
+## Más articulos variados
+
+{{< medium "https://medium.com/@usarral/probar-stable-diffusion-gratis-usando-google-colab-usarral-8f8233ead7e1" "Tutorial de utilización de Stable Diffusion Gratis">}}

@@ -36,7 +36,12 @@
       <div itemprop="articleBody">
         {{ .Content }}
       </div>
+      <hr>
 
+      <p style=" color: #0068b8;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;">Otros artículos de interés</p>
       <div id='article-pagination'>
         {{ with .PrevPage }}
         <a class='prev' href="{{.Permalink}}">
@@ -68,11 +73,11 @@
     display: none;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1600px) {
     #TableOfContents-container {
       display: block;
-      position: fixed;
-      right: 32px;
+      position: sticky;
+      top: 200px;
     }
 
     #TableOfContents-container h3 {

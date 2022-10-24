@@ -17,6 +17,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 *,
@@ -1010,6 +1011,7 @@ twitter-widget {
     color: var(--dark-text);
   }
 
+
   #article-content blockquote p,
   #article-content blockquote a
   {
@@ -1059,3 +1061,10 @@ twitter-widget {
 #TableOfContents-container{
   left: 75%;
 }
+
+/* ------------ */
+/* 3. Article */
+/* ------------ */
+
+  
+
