@@ -10,73 +10,75 @@ tags:
 ---
 Listado de herramientas y tecnologías con su definición:
 
-## Lenguajes de Programación
+## Frameworks
 
-### [Babel](https://babeljs.io)
+---
 
-Es un compilador el cual transforma el codigo escrito en versiones modernas de Javascript en versiones anteriores para proporcionar retrocompatibilidad
+### [Angular](https://angular.io)
 
-### [WebPack](https://webpack.js.org)
-
-Es un empaquetador de modulos, funciona de manera similar a babel convirtiendo versiones nuevas de JS a versiones anteriores con mayor compatibilidad, convierte el codigo de preprocesadores como SASS, ...
-
-### Prototype
-
-Es un Framework para Javascript diseñado para el simplificar el desarrollo de apps web
-
-### Polyfill
-
-Fragmento de codigo que se utiliza para proporcionar una funcionalidad moderna en motores antiguos que no lo admiten de forma nativa
-
-### [PHP](https://php.net)
-
-Lenguaje de Programación Backend de uso General con orientación hacia el desarrollo web.
-
-### Frameworks de PHP
-
-Un framework PHP es un marco de trabajo para el desarrollo de proyectos que incluye una buena base de código para comenzar a crear una web profesional sin tener que preocuparte de las tareas repetitivas propias de cada proyecto.
-
-### [DJango](https://djangoproject.com)
-
-Es un framework de desarrollo web escrito en python orientado al modelo vista-controlador.
-
-### JSP
-
-JavaServer Pages es una tecnología que ayuda a los desarrolladores de software a crear páginas web dinámicas basadas en HTML y XML, entre otros tipos de documentos. JSP es similar a PHP, pero usa el lenguaje de programación Java.
-
-### CSS
-
-Hojas de estilo en cascadas. Son estilos dedicados a mejorar el diseño de las paginas web.
+Framework open-source para el diseño de interfaces de usuario web y SPA. Desarrollado principalmente por la empresa Google y la comunidad open-source. Google lo utiliza para algunos de sus productos.
 
 ### [Bootstrap](https://getbootstrap.com)
 
 Biblioteca para facilitar el diseño y/o maquetación de sitios de forma rapida.
 Diseñado por la empresa Twitter, y utilizado en la red social con el mismo nombre
 
-### [Vue](https://vuejs.org)
+### [DJango](https://djangoproject.com)
 
-Framework open-source para el diseño de interfaces de usuario web y SPA.
+Es un framework de desarrollo web escrito en python orientado al modelo vista-controlador.
+
+### Frameworks de PHP
+
+Un framework PHP es un marco de trabajo para el desarrollo de proyectos que incluye una buena base de código para comenzar a crear una web profesional sin tener que preocuparte de las tareas repetitivas propias de cada proyecto.
+
+### [JQuery](https://jquery.com)
+
+Es una librería de JavaScript diseñada para facilitar el acceso al DOM.
+
+### JSP
+
+JavaServer Pages es una tecnología que ayuda a los desarrolladores de software a crear páginas web dinámicas basadas en HTML y XML, entre otros tipos de documentos. JSP es similar a PHP, pero usa el lenguaje de programación Java.
+
+### Prototype
+
+Es un Framework para Javascript diseñado para el simplificar el desarrollo de apps web
 
 ### [React](https://reactjs.org)
 
 Framework open-source para el diseño de interfaces de usuario web y SPA. Desarrollado principalmente por la empresa Meta Inc. y la comunidad open-source. Es el que utiliza la empresa Meta en sus productos como Facebook o Instagram
 
-### [Angular](https://angular.io)
+### [Svelte](https://svelte.dev)
 
-Framework open-source para el diseño de interfaces de usuario web y SPA. Desarrollado principalmente por la empresa Google y la comunidad open-source. Google lo utiliza para algunos de sus productos.
+Framework basado en JavaScript para la generación de sitios por componentes.
+
+### [Vue](https://vuejs.org)
+
+Framework open-source para el diseño de interfaces de usuario web y SPA.
+
+## Lenguajes de Programación
+
+---
+
+### [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+
+Hojas de estilo en cascadas. Son estilos dedicados a mejorar el diseño de las paginas web.
 
 ### [JavaScript](https://js.org)
 
 Lenguaje de programación interpretado. Es orientado a objetos, debilmete tipado, y dinámico. Creado en 1995 por Brendan Eich.
+
+### [PHP](https://php.net)
+
+Lenguaje de Programación Backend de uso General con orientación hacia el desarrollo web.
 
 ### [TypeScript](https://typescriptlang.org)  
 
 Lenguaje de programación open source que se compila a JavaScript. Añade tipos estáticos y objetos basados en clases.
 Apareció en octubre de 2012 y es diseñado y principalmente mantenido por Microsoft.
 
-### [JQuery](https://jquery.com)
+## Generadores de Sitios
 
-Es una librería de JavaScript diseñada para facilitar el acceso al DOM.
+---
 
 ### [Gatsby](https://gatsbyjs.com)  
 
@@ -94,26 +96,38 @@ Es un creador de blogs estáticos.
 
 Otro generador más de sitios estáticos.
 
-### Scraping
+## Otras herramientas
 
-Es una técica de extracción de información. Generalmente simulan la navegación de un usuario.
+---
+
+### [Babel](https://babeljs.io)
+
+Es un compilador el cual transforma el codigo escrito en versiones modernas de Javascript en versiones anteriores para proporcionar retrocompatibilidad
 
 ### [Heroku](https://heroku.com)
 
 Es un PaaS (Platform as a Service) que ofrece un hosting para apps en varios lenguajes.
 
-### [Vuespress](https://vuepress.vuejs.org)
+### [Linux](https://linux.org)
 
-Genera archivos estáticos prerenderizados para cada página, de forma que permite ejecutar las webs en formato SPA una vez están cargadas.
-
-### [Svelte](https://svelte.dev)
-
-Framework basado en JavaScript para la generación de sitios por componentes.
+Es un kernel basado en Unix de codigo abierto, mantenido y desarrollado por la comunidad para multiples tipos de dispositivos. A dia de hoy de forma global es uno de los kernels mas utilizados ya que se puede encontrar tanto en moviles bajo android, servidores bajo Ubuntu Server, IOT,...
 
 ### [NodeJS](https://nodejs.org)
 
 Entorno de ejecución de Javascript multiplataforma para el formato servidor.
 
-### [Linux](https://linux.org)
+### Polyfill
 
-Es un kernel basado en Unix de codigo abierto, mantenido y desarrollado por la comunidad para multiples tipos de dispositivos. A dia de hoy de forma global es uno de los kernels mas utilizados ya que se puede encontrar tanto en moviles bajo android, servidores bajo Ubuntu Server, IOT,...
+Fragmento de codigo que se utiliza para proporcionar una funcionalidad moderna en motores antiguos que no lo admiten de forma nativa
+
+### Scraping
+
+Es una técica de extracción de información. Generalmente simulan la navegación de un usuario.
+
+### [Vuespress](https://vuepress.vuejs.org)
+
+Genera archivos estáticos prerenderizados para cada página, de forma que permite ejecutar las webs en formato SPA una vez están cargadas.
+
+### [WebPack](https://webpack.js.org)
+
+Es un empaquetador de modulos, funciona de manera similar a babel convirtiendo versiones nuevas de JS a versiones anteriores con mayor compatibilidad, convierte el codigo de preprocesadores como SASS, ...
