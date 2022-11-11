@@ -8,7 +8,8 @@ tags:
     - me
 layout: about
 ---
-I am a student and developer focused on websites and applications. currently working on [Pedrotercero](https://pedrotercero.com)
+I am a student and developer focused on websites and applications. 
+<!-- currently working on [Pedrotercero](https://pedrotercero.com) -->
 
 ---
 

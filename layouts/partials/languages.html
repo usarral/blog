@@ -6,8 +6,9 @@
     <a href="{{- .Permalink -}}"
         title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
         aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-        {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-        {{- .Language.LanguageName | emojify -}}
+
+        {{- if .Language.Params.languageIcon }}
+        <img src="{{ .Language.Params.languageIcon }}" alt="{{ .Language.LanguageName | default (.Lang | title) }}"  class="languageFlag"/>
         {{- else }}
         {{- .Lang | title -}}
         {{- end -}}

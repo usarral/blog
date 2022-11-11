@@ -39,6 +39,7 @@
     "languages": {
         "es": {
             "languageName": "es",
+            "languageIcon": "/images/es.png",
             "title": "Blog | Usarral",
             "weight": 0,
             "params": {
@@ -97,6 +98,7 @@
         },
         "en": {
             "languageName": "EN",
+            "languageIcon": "/images/en.png",
             "title": "Blog | Usarral",
             "weight": 0,
             "params": {
@@ -146,7 +148,9 @@
         },
         "fr": {
             "languageName": "FR",
+            "languageIcon": "/images/fr.png",
             "title": "Blog | Usarral",
+
             "weight": 0,
             "params": {
                 "description": "Blog developed in the subject Development in a Server Environment 2022-2023 at the CPIFP Los Enlaces",

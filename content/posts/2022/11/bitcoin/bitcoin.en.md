@@ -1,13 +1,12 @@
 ---
 title: "Bitcoin and the Blockchain"
-date: 2022-11-12
-toc: true
+date: 2022-11-11
 topic: bitcoin
-draft: false
+toc: true
 tags:
     - bitcoin
+draft: false
 ---
-
 # Bitcoin and the Blockchain
 
 There are words that we are hearing more and more often, but we don't really know what they mean. Bitcoin and the Blockchain are two of those words. In this article, I will try to explain what they are and how they work.

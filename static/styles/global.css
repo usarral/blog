@@ -1076,5 +1076,12 @@ twitter-widget {
 }
 
 /* ------------ */
-/* 3. Article */
+/* 3. Flags */
 /* ------------ */
+
+.languageFlag{
+  width: 3em;
+  height: 3em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
