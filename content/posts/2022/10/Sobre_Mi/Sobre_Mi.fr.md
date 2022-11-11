@@ -8,7 +8,8 @@ tags:
     - me
 layout: about
 ---
-Je suis un étudiant et développeur axé sur les sites Web et les applications. travaille actuellement sur [Pedrotercero](https://pedrotercero.com)
+Je suis un étudiant et développeur axé sur les sites Web et les applications. 
+<!-- travaille actuellement sur [Pedrotercero](https://pedrotercero.com) -->
 
 ---
 
