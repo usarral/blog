@@ -4,6 +4,7 @@ const { parse } = require('rss-to-json')
 const algoliasearch = require('algoliasearch')
 const ALGOLIA_APPLICATION_ID = 'OK2MQNJFKT'
 const ALGOLIA_ADMIN_API_KEY = '5165093840593a74fa0bcb082144620d'
+//This pin is expirated
 const ALGOLIA_INDEX_NAME = 'prod_blog_content'
 
 const client = algoliasearch(ALGOLIA_APPLICATION_ID, ALGOLIA_ADMIN_API_KEY)
