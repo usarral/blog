@@ -6,8 +6,15 @@
 ·
 <span>{{.ReadingTime}} minutos de lectura</span>
 ·
-<a target="_blank" rel="noopener nofollow"
-  href='https://github.com/usarral/blog/edit/main/content/posts/{{.File.LogicalName}}'>
-  ¿Una errata? Edita el artículo {{ partial "icons/github.html" . }}
+<!-- Replace the %5c with a \  on File.Path -->
+
+
+{{ $path := .File.Path }}
+{{ $path = strings.Replace $path "%5c" "/" }}
+
+
+<a href="https://github.com/usarral/blog/edit/main/content/{{ $path }}" target=" _blank">¿Una errata? Edita el artículo
+  {{ partial
+  "icons/github.html" . }}
 </a>
 {{ end }}
