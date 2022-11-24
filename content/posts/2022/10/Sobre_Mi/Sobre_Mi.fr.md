@@ -25,13 +25,6 @@ Je suis un étudiant et développeur axé sur les sites Web et les applications.
 - ![OracleXE](https://usarr.tech/oraclexe.png)
 - ![MongoDB](https://usarr.tech/mongodb.png)
 
----
-## Discord 
-
-{{< discord-profile 496251940485988385 >}}
-## Contribuciones en Github
-
-{{< github "usarral" >}}
 
 ## Más articulos variados
 

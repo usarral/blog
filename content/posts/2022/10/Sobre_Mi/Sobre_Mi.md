@@ -8,7 +8,7 @@ tags:
     - me
 layout: about
 ---
-Soy un estudiante y desarrollador enfocado en webs y aplicaciones. 
+Soy un estudiante y desarrollador enfocado en webs y aplicaciones.
 <!-- Actualmente trabajando en [Pedrotercero](https://pedrotercero.com) -->
 
 ---
@@ -24,14 +24,6 @@ Soy un estudiante y desarrollador enfocado en webs y aplicaciones.
 - ![Firebase](https://usarr.tech/firebase.png)
 - ![OracleXE](https://usarr.tech/oraclexe.png)
 - ![MongoDB](https://usarr.tech/mongodb.png)
-
----
-## Discord 
-
-{{< discord-profile 496251940485988385 >}}
-## Contribuciones en Github
-
-{{< github "usarral" >}}
 
 ## Más articulos variados
 

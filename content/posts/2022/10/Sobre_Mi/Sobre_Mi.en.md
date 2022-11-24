@@ -8,7 +8,7 @@ tags:
     - me
 layout: about
 ---
-I am a student and developer focused on websites and applications. 
+I am a student and developer focused on websites and applications.
 <!-- currently working on [Pedrotercero](https://pedrotercero.com) -->
 
 ---
@@ -24,14 +24,6 @@ I am a student and developer focused on websites and applications.
 - ![Firebase](https://usarr.tech/firebase.png)
 - ![OracleXE](https://usarr.tech/oraclexe.png)
 - ![MongoDB](https://usarr.tech/mongodb.png)
-
----
-## Discord 
-
-{{< discord-profile 496251940485988385 >}}
-## Contribuciones en Github
-
-{{< github "usarral" >}}
 
 ## Más articulos variados
 
