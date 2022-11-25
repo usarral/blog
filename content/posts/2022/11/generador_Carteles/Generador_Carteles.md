@@ -1,9 +1,9 @@
 ---
 title: "Generador de Carteles"
-date: 2022-11-24
+date: 2022-11-25
 toc: false
 topic: me
-draft: true
+draft: false
 tags:
     - me
     - php
