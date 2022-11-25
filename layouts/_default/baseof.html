@@ -65,7 +65,7 @@
   {{ $tag := index (.Params.tags) 0}}
   {{ $title := .Title }}
   {{ $subtitle := (print .ReadingTime " minutos de lectura" ) }}
-  {{ $image = (print .Site.BaseURL "/og?title=" $title "&subtitle=" $subtitle) | safeHTML }}
+
   {{ end }}
 
   <meta name="twitter:image" content="{{ $image }}" />
@@ -75,7 +75,7 @@
 
   <meta property="og:locale" content="es_ES" />
   <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
-  <meta property="og:image" content="{{ $image | safeHTMLAttr }}" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}images/{{ .File.Path }}" />
   <meta property="og:description" content="{{- .Description | default .Site.Params.Description -}}" />
   <meta property="og:site_name" content="Blog | Usarral" />
 
