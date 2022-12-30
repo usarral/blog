@@ -1,4 +1,4 @@
-{{- $lang := .Lang}}
+<!-- {{- $lang := .Lang}}
 {{- with site.Home.AllTranslations }}
 <section class='u-center'>
     {{- range . -}}
@@ -8,7 +8,8 @@
         aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
 
         {{- if .Language.Params.languageIcon }}
-        <img src="{{ .Language.Params.languageIcon }}" alt="{{ .Language.LanguageName | default (.Lang | title) }}"  class="languageFlag"/>
+        <img src="{{ .Language.Params.languageIcon }}" alt="{{ .Language.LanguageName | default (.Lang | title) }}"
+            class="languageFlag" />
         {{- else }}
         {{- .Lang | title -}}
         {{- end -}}
@@ -16,4 +17,4 @@
     {{- end -}}
     {{- end}}
 </section>
-{{- end }}
+{{- end }} -->

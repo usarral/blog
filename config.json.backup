@@ -1,0 +1,200 @@
+{
+    "baseURL": "https://blog.usarr.tech",
+    "defaultContentLanguage": "es",
+    "languageCode": "es",
+    "title": "Blog | Usarral",
+    "disableHugoGeneratorInject": true,
+    "preserveTaxonomyNames": true,
+    "paginate": 7,
+    "permalinks": {
+        "posts": "/:filename/"
+    },
+    "markup": {
+        "highlight": {
+            "guessSyntax": true,
+            "noClasses": false,
+            "tabWidth": 2
+        },
+        "goldmark": {
+            "renderer": {
+                "unsafe": true
+            }
+        }
+    },
+    "outputs": {
+        "home": [
+            "HTML",
+            "RSS",
+            "Algolia"
+        ]
+    },
+    "outputFormats": {
+        "Algolia": {
+            "baseName": "algolia",
+            "isPlainText": true,
+            "mediaType": "application/json",
+            "notAlternative": true
+        }
+    },
+    "languages": {
+        "es": {
+            "languageName": "es",
+            "languageIcon": "/images/es.png",
+            "title": "Blog | Usarral",
+            "weight": 0,
+            "params": {
+                "description": "Blog desarrollado en la asignatura Desarrollo en Entorno Servidor 2022-2023 en el CPIFP Los Enlaces",
+                "image": "/favicon/apple-touch-icon.png",
+                "cookieMessage": "Este sitio web utiliza cookies para mejorar su experiencia. Asumiremos que está de acuerdo con esto, pero puede optar por no participar si lo desea."
+            },
+            "menu": {
+                "topics": [
+                    {
+                        "identifier": "Mail",
+                        "name": "Contacto",
+                        "title": "Contacta conmigo",
+                        "url": "mailto:usarralph@gmail.com",
+                        "weight": 2
+                    }
+                ],
+                "main": [
+                    {
+                        "identifier": "Mail",
+                        "name": "Contacto",
+                        "title": "Contacta conmigo",
+                        "url": "mailto:usarralph@gmail.com",
+                        "weight": -112
+                    },
+                    {
+                        "identifier": "RSS",
+                        "name": "RSS",
+                        "title": "RSS del sitio",
+                        "url": "/index.xml",
+                        "weight": -111
+                    },
+                    {
+                        "identifier": "Github",
+                        "name": "Github",
+                        "title": "Mi perfil de Github",
+                        "url": "https://github.com/usarral",
+                        "weight": -110
+                    },
+                    {
+                        "identifier": "Youtube",
+                        "name": "Youtube",
+                        "title": "Mi perfil de Youtube",
+                        "url": "https://www.youtube.com/channel/UCHarnqEHtcQ616mopL_pjmg/",
+                        "weight": -109
+                    },
+                    {
+                        "identifier": "Twitter",
+                        "name": "Twitter",
+                        "title": "Mi perfil de Twitter",
+                        "url": "https://twitter.com/usarral_",
+                        "weight": -108
+                    }
+                ]
+            }
+            // },
+            // "en": {
+            //     "languageName": "EN",
+            //     "languageIcon": "/images/en.png",
+            //     "title": "Blog | Usarral",
+            //     "weight": 0,
+            //     "params": {
+            //         "description": "Blog developed in the subject Development in a Server Environment 2022-2023 at the CPIFP Los Enlaces",
+            //         "image": "/favicon/apple-touch-icon.png",
+            //         "cookieMessage": "This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish."
+            //     },
+            //     "menu": {
+            //         "main": [
+            //             {
+            //                 "identifier": "Mail",
+            //                 "name": "Contacto",
+            //                 "title": "Contact with me",
+            //                 "url": "mailto:usarralph@gmail.com",
+            //                 "weight": -112
+            //             },
+            //             {
+            //                 "identifier": "RSS",
+            //                 "name": "RSS",
+            //                 "title": "Site RSS",
+            //                 "url": "/index.xml",
+            //                 "weight": -111
+            //             },
+            //             {
+            //                 "identifier": "Github",
+            //                 "name": "Github",
+            //                 "title": "My Github profile",
+            //                 "url": "https://github.com/usarral",
+            //                 "weight": -110
+            //             },
+            //             {
+            //                 "identifier": "Youtube",
+            //                 "name": "Youtube",
+            //                 "title": "My Youtube profile",
+            //                 "url": "https://www.youtube.com/channel/UCHarnqEHtcQ616mopL_pjmg/",
+            //                 "weight": -109
+            //             },
+            //             {
+            //                 "identifier": "Twitter",
+            //                 "name": "Twitter",
+            //                 "title": "My Twitter profile",
+            //                 "url": "https://twitter.com/usarral_",
+            //                 "weight": -108
+            //             }
+            //         ]
+            //     }
+            // },
+            // "fr": {
+            //     "languageName": "FR",
+            //     "languageIcon": "/images/fr.png",
+            //     "title": "Blog | Usarral",
+            //     "weight": 0,
+            //     "params": {
+            //         "description": "Blog developed in the subject Development in a Server Environment 2022-2023 at the CPIFP Los Enlaces",
+            //         "image": "/favicon/apple-touch-icon.png",
+            //         "cookieMessage": "This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish."
+            //     },
+            //     "menu": {
+            //         "main": [
+            //             {
+            //                 "identifier": "Mail",
+            //                 "name": "Contact",
+            //                 "title": "Contactez moi",
+            //                 "url": "mailto:usarralph@gmail.com",
+            //                 "weight": -112
+            //             },
+            //             {
+            //                 "identifier": "RSS",
+            //                 "name": "RSS",
+            //                 "title": "RSS du site",
+            //                 "url": "/index.xml",
+            //                 "weight": -111
+            //             },
+            //             {
+            //                 "identifier": "Github",
+            //                 "name": "Github",
+            //                 "title": "Mon profil Github",
+            //                 "url": "https://github.com/usarral",
+            //                 "weight": -110
+            //             },
+            //             {
+            //                 "identifier": "Youtube",
+            //                 "name": "Youtube",
+            //                 "title": "Mon profil Youtube",
+            //                 "url": "https://www.youtube.com/channel/UCHarnqEHtcQ616mopL_pjmg/",
+            //                 "weight": -109
+            //             },
+            //             {
+            //                 "identifier": "Twitter",
+            //                 "name": "Twitter",
+            //                 "title": "Mon profil Twitter",
+            //                 "url": "https://twitter.com/usarral_",
+            //                 "weight": -108
+            //             }
+            //         ]
+            //     }
+        }
+    }
+}
