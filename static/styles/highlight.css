@@ -25,8 +25,8 @@ code {
   font-size: 14px;
 }
 
-:not(pre) > code {
-  background: rgba(0,0,0,.06);
+:not(pre)>code {
+  background: rgba(0, 0, 0, .06);
   border-radius: 2px;
   color: #1a1a1a;
   padding: 2px 4px 1px;
@@ -43,12 +43,15 @@ pre.highlight {
 .highlight .ge {
   font-style: italic;
 }
+
 .highlight .gs {
   font-weight: 700;
 }
+
 .highlight .ow {
   font-weight: 700;
 }
+
 .highlight .n,
 .highlight .nf,
 .highlight .nn,
@@ -56,6 +59,7 @@ pre.highlight {
 .highlight .p {
   color: #abb2bf;
 }
+
 .highlight .c,
 .highlight .c1,
 .highlight .cm,
@@ -64,10 +68,12 @@ pre.highlight {
   color: #969696;
   font-style: italic;
 }
+
 .highlight .sr,
 .highlight .ss {
   color: #56b6c2;
 }
+
 .highlight .k,
 .highlight .kc,
 .highlight .kd,
@@ -77,6 +83,7 @@ pre.highlight {
 .highlight .kt {
   color: #dc64ff;
 }
+
 .highlight .l,
 .highlight .ld,
 .highlight .s,
@@ -91,11 +98,13 @@ pre.highlight {
 .highlight .sx {
   color: #8bdb51;
 }
+
 .highlight .nt,
 .highlight .nx,
 .highlight .vi {
   color: #fb6666;
 }
+
 .highlight .il,
 .highlight .m,
 .highlight .mf,
@@ -105,6 +114,7 @@ pre.highlight {
 .highlight .na {
   color: #e8e465;
 }
+
 .highlight .bp,
 .highlight .nb,
 .highlight .nc,
@@ -119,41 +129,52 @@ pre.highlight {
 .highlight .vg {
   color: #e5c07b;
 }
+
 .highlight .gd {
   color: #e05252;
 }
+
 .highlight .gi {
   color: #43d08a;
 }
+
 .highlight .w {
   color: #f8f8f2;
 }
+
 .highlight .cpf {
   color: navy;
 }
+
 .highlight .gu {
   color: #75715e;
 }
+
 .highlight .lineno {
   color: #636d83;
   user-select: none;
 }
+
 .highlight .ln {
   color: #636d83;
   user-select: none;
 }
+
 .highlight .ln:after {
   content: " ";
 }
-.highlight .hll, .highlight .hl {
+
+.highlight .hll,
+.highlight .hl {
   color: #abb2bf;
   background-color: #3a3f4b;
   display: block;
 }
 
-.highlight .language-json .w + .s2 {
+.highlight .language-json .w+.s2 {
   color: #e06c75;
 }
+
 .highlight .language-json .kc {
   color: #56b6c2;
 }
@@ -163,7 +184,7 @@ pre.highlight {
 }
 
 .highlight .language-typescript::before {
-  background: url(/images/tags/typescript.png);
+  background: url(/images/tags/typescript.svg);
   width: 32px;
   height: 32px;
   background-size: cover;
@@ -173,7 +194,7 @@ pre.highlight {
 }
 
 .highlight .language-css::before {
-  background: url(/images/tags/css.png);
+  background: url(/images/tags/css.svg);
   width: 32px;
   height: 32px;
   background-size: cover;
@@ -183,7 +204,7 @@ pre.highlight {
 }
 
 .highlight .language-html::before {
-  background: url(/images/tags/html.png);
+  background: url(/images/tags/html.svg);
   width: 32px;
   height: 32px;
   background-size: cover;
@@ -193,7 +214,7 @@ pre.highlight {
 }
 
 .highlight .language-javascript::before {
-  background: url(/images/tags/javascript.png);
+  background: url(/images/tags/javascript.svg);
   width: 32px;
   height: 32px;
   background-size: cover;
@@ -203,7 +224,7 @@ pre.highlight {
 }
 
 .highlight .language-sh::before {
-  background: url(/images/tags/terminal.png);
+  background: url(/images/tags/terminal.svg);
   width: 32px;
   height: 32px;
   background-size: cover;
@@ -213,7 +234,7 @@ pre.highlight {
 }
 
 .highlight .language-svelte::before {
-  background: url(/images/tags/svelte.png);
+  background: url(/images/tags/svelte.svg);
   width: 32px;
   height: 32px;
   background-size: cover;
@@ -223,7 +244,7 @@ pre.highlight {
 }
 
 .highlight .language-jsx::before {
-  background: url(/images/tags/react.png);
+  background: url(/images/tags/react.svg);
   width: 36px;
   height: 32px;
   background-size: cover;
