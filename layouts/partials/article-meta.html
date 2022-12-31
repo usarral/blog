@@ -6,11 +6,13 @@
 ·
 <span>{{.ReadingTime}} minutos de lectura</span>
 ·
-<!-- Replace the %5c with a \  on File.Path -->
 
 
 {{ $path := .File.Path }}
-{{ $path = strings.Replace $path "%5c" "/" }}
+
+<!-- Replace in $path the \ with / and remove the content/ part -->
+
+{{ $path = strings.Replace $path "\\" "/" -1 }}
 
 
 <a href="https://github.com/usarral/blog/edit/main/content/{{ $path }}" target=" _blank">¿Una errata? Edita el artículo

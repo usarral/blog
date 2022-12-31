@@ -12,7 +12,7 @@
 
 <body>
   <div id='images'>
-    <img id='logo' src='/images/tags/me.png' alt="Solo logo" />
+    <img id='logo' src='/images/tags/me.svg' alt="Solo logo" />
     {{if .Params.image}}
     <span>+</span>
     <img id='tag' alt="Tag logo" />
@@ -22,7 +22,7 @@
   <span id="subtitle"></span>
 </body>
 <script>
-  const createTag = tag => '/images/tags/' + tag + '.png'
+  const createTag = tag => '/images/tags/' + tag + '.svg'
   // get params using URLSearchParams
   const params = new URLSearchParams(window.location.search);
   const title = decodeURIComponent(params.get('title'))

@@ -47,10 +47,6 @@
 
   <meta name="twitter:creator" content="@usarral_" />
   <meta name="twitter:domain" content="usarr.tech" />
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-  <script>
-    mermaid.initialize({ startOnLoad: true });
-  </script>
 
 
   {{ $image := .Site.Params.Image }}
@@ -75,7 +71,7 @@
 
   <meta property="og:locale" content="es_ES" />
   <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}/images/og/{{ with .File }}{{ .Dir }}{{ end }}og.png" />
+  <!-- <meta property="og:image" content="{{ .Site.BaseURL }}/images/og/{{ with .File }}{{ .Dir }}{{ end }}og.png" /> -->
   <meta property="og:description" content="{{- .Description | default .Site.Params.Description -}}" />
   <meta property="og:site_name" content="Blog | Usarral" />
 

@@ -156,12 +156,12 @@
     {{ with .Param "tags" }}
     <picture>
       {{ range first 1 . }}
-      <img decoding="async" alt='Imagen de la etiqueta {{ . }}' src='/images/tags/{{.}}.png' width="48" height="48" />
+      <img decoding="async" alt='Imagen de la etiqueta {{ . }}' src='/images/tags/{{.}}.svg' width="64" height="64" />
       {{ end }}
       {{ range after 1 . }}
       {{ if . }}
-      <img class='secondary' decoding="async" alt='Imagen de la etiqueta {{ . }}' src='/images/tags/{{.}}.png'
-        width="48" height="48" />
+      <img class='secondary' decoding="async" alt='Imagen de la etiqueta {{ . }}' src='/images/tags/{{.}}.svg'
+        width="64" height="64" />
       {{ end }}
       {{ end }}
     </picture>
