@@ -21,3 +21,4 @@ El cual carga las API KEYs desde variables de entorno. Genera una versión minif
 ## TODO
 
 * Add algolia for different lang
+* OG images
