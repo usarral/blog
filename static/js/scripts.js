@@ -178,7 +178,7 @@ window.customElements.define('lite-youtube', LiteYTEmbed)
 
 // Show share only when needed
 const intersectionObserverOptions = {
-  rootMargin: '0px',
+  rootMargin: '0rem',
   threshold: 1.0
 }
 
@@ -303,7 +303,7 @@ function initTableOfContents() {
 
   const options = {
     threshold: 0.5,
-    rootMargin: '50px 0px -55% 0px'
+    rootMargin: '3.125rem 0rem -55% 0rem'
   }
 
   const observer = new window.IntersectionObserver(changeBgLinks, options)

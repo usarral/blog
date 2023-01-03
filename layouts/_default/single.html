@@ -39,7 +39,7 @@
       <hr>
 
       <p style=" color: #0068b8;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;">Otros artículos de interés</p>
       <div id='article-pagination'>
@@ -73,7 +73,7 @@
     display: none;
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: 100rem) {
     #TableOfContents-container {
       display: block;
       position: -webkit-sticky;
@@ -84,21 +84,21 @@
     }
 
     #TableOfContents-container h3 {
-      font-size: 14px;
-      padding-bottom: 8px;
+      font-size: .875rem;
+      padding-bottom: .5rem;
     }
 
     #TableOfContents ul {
       list-style: none;
       padding-left: 0;
       padding-bottom: 0;
-      max-width: 200px;
+      max-width: 12.5rem;
       display: flex;
       flex-direction: column;
     }
 
     #TableOfContents ul li {
-      margin-bottom: 8px;
+      margin-bottom: .5rem;
     }
 
     #TableOfContents ul li.active a {
@@ -108,27 +108,27 @@
     #TableOfContents ul ul {
       list-style: none;
       color: #444;
-      padding-left: 8px;
-      margin-top: 8px;
+      padding-left: .5rem;
+      margin-top: .5rem;
     }
 
     #TableOfContents ul ul li:before {
       content: '-';
-      padding-right: 4px;
+      padding-right: .25rem;
     }
 
     #TableOfContents a {
       color: #555;
       flex-wrap: nowrap;
       font-weight: 500;
-      font-size: 12px;
+      font-size: .75rem;
       line-height: 1;
-      padding: 4px 8px;
+      padding: .25rem .5rem;
       border-radius: 312.5rem;
     }
 
     #TableOfContents a code {
-      font-size: 12px;
+      font-size: .75rem;
     }
 
     #TableOfContents a:hover {
@@ -149,7 +149,7 @@
 {{ if (.Params.description) }}
 <style>
   #share {
-    bottom: 16px;
+    bottom: 1rem;
     left: 0;
     display: flex;
     position: fixed;
@@ -161,15 +161,15 @@
 
   #share a {
     background: #fff;
-    border-radius: 32px;
+    border-radius: 2rem;
     bottom: 0;
-    box-shadow: rgba(100, 110, 140, .4) 0px 6px 21px 2px;
+    box-shadow: rgba(100, 110, 140, .4) 0rem .375rem 1.3125rem .125rem;
     color: #333;
     display: flex;
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 500;
-    margin: 0 16px;
-    padding: 8px 16px;
+    margin: 0 1rem;
+    padding: .5rem 1rem;
     text-align: center;
     align-self: center;
     align-items: center;
@@ -182,7 +182,7 @@
   #share svg {
     align-self: center;
     display: inline-flex;
-    margin-left: 4px;
+    margin-left: .25rem;
   }
 </style>
 <div id='share'>

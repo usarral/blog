@@ -1,78 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <title>Og Image Creator</title>
-  <meta name="robots" content="noindex" />
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800">
-
+  <title>OG Image Creator</title>
 </head>
 
 <body>
-  <div id='images'>
-    <img id='logo' src='/images/tags/me.svg' alt="Solo logo" />
-    {{if .Params.image}}
-    <span>+</span>
-    <img id='tag' alt="Tag logo" />
-    {{end}}
+  <div id="images">
+    <img src="/images/tags/me.png" alt="Me Logo" id="logo">
+    <span id="plusicon"></span>
+    <img id="tag">
   </div>
-  <h1></h1>
+  <h1 id="title"></h1>
   <span id="subtitle"></span>
 </body>
 <script>
-  const createTag = tag => '/images/tags/' + tag + '.svg'
-  // get params using URLSearchParams
-  const params = new URLSearchParams(window.location.search);
-  const title = decodeURIComponent(params.get('title'))
-  const tag = params.get('tag')
-  const subtitle = params.get('subtitle')
+  const $ = (selector) => document.querySelector(selector)
+  const $$ = (selector) => document.querySelectorAll(selector)
 
-  const $title = document.querySelector('h1')
-  const $img = document.querySelector('#tag')
-  const $subtitle = document.querySelector('#subtitle')
+  const title = $("#title")
+  const subtitle = $("#subtitle")
+  const tag = $("#tag")
+  const plusicon = $("#plusicon")
 
-  $title.innerText = title
-  $subtitle.innerText = subtitle
+  const params = new URLSearchParams(window.location.search)
 
-  $img.setAttribute('src', createTag(tag))
-
-  $img.onload = () => {
-    const div = document.createElement('div')
-    div.id = 'done'
-    document.body.appendChild(div)
+  const titleText = params.get("title")
+  if (titleText) {
+    title.innerText = titleText
   }
+  const subtitleText = params.get("subtitle")
+  if (subtitleText) {
+    subtitle.innerText = subtitleText
+  }
+  const tagText = params.get("tag")
+  if (tagText) {
+    plusicon.innerText = "+"
+    tag.src = `/images/tags/${tagText}.svg`
+  }
+
 </script>
 <style>
   * {
     box-sizing: border-box;
-  }
-
-  #logo,
-  #tag {
-    width: 150px;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  #images {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #images span {
-    color: #eee;
-    font-size: 100px;
-    padding: 0 1.5rem;
-  }
-
-  #subtitle {
-    color: #eee;
-    font-weight: 500;
-    font-size: 2rem;
   }
 
   body {
@@ -123,9 +96,30 @@
     color: #eee;
   }
 
-  code {
-    font-family: 'IBM Plex Mono';
-    font-size: 1.5rem;
+  #subtitle {
+    color: #eee;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  #logo,
+  #tag {
+    width: 10rem;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #images {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #images span {
+    color: #eee;
+    font-size: 7rem;
+    padding: 0 1.5rem;
   }
 </style>
 

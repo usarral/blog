@@ -14,30 +14,30 @@ pre {
 
 pre {
   background: #282c34;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: white;
   margin: 0;
   overflow: auto;
-  padding: 16px;
+  padding: 1rem;
 }
 
 code {
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 :not(pre)>code {
   background: rgba(0, 0, 0, .06);
-  border-radius: 2px;
+  border-radius: .125rem;
   color: #1a1a1a;
-  padding: 2px 4px 1px;
+  padding: .125rem .25rem .0625rem;
   white-space: normal;
 }
 
 .highlight,
 pre.highlight {
-  border-radius: 4px;
-  max-width: 800px;
-  margin: 48px auto;
+  border-radius: .25rem;
+  max-width: 50rem;
+  margin: 3rem auto;
 }
 
 .highlight .ge {
@@ -185,72 +185,72 @@ pre.highlight {
 
 .highlight .language-typescript::before {
   background: url(/images/tags/typescript.svg);
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background-size: cover;
   content: '';
   border-radius: 0;
-  top: -12px;
+  top: -0.75rem;
 }
 
 .highlight .language-css::before {
   background: url(/images/tags/css.svg);
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background-size: cover;
   content: '';
   border-radius: 0;
-  top: -12px;
+  top: -0.75rem;
 }
 
 .highlight .language-html::before {
   background: url(/images/tags/html.svg);
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background-size: cover;
   content: '';
   border-radius: 0;
-  top: -12px;
+  top: -0.75rem;
 }
 
 .highlight .language-javascript::before {
   background: url(/images/tags/javascript.svg);
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background-size: cover;
   content: '';
   border-radius: 0;
-  top: -12px;
+  top: -0.75rem;
 }
 
 .highlight .language-sh::before {
   background: url(/images/tags/terminal.svg);
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background-size: cover;
   content: '';
   border-radius: 0;
-  top: -12px;
+  top: -0.75rem;
 }
 
 .highlight .language-svelte::before {
   background: url(/images/tags/svelte.svg);
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   background-size: cover;
   content: '';
   border-radius: 0;
-  top: -12px;
+  top: -0.75rem;
 }
 
 .highlight .language-jsx::before {
   background: url(/images/tags/react.svg);
-  width: 36px;
-  height: 32px;
+  width: 2.25rem;
+  height: 2rem;
   background-size: cover;
   content: '';
   border-radius: 0;
-  top: 6px;
+  top: .375rem;
 }
 
 .highlight .language-fallback::before {
@@ -259,18 +259,18 @@ pre.highlight {
 
 .highlight code::before {
   background: #fff;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: rgba(0, 0, 0, .7);
   content: attr(data-lang);
-  font-size: 12px;
-  padding: 2px 8px;
+  font-size: .75rem;
+  padding: .125rem .5rem;
   position: absolute;
-  right: 8px;
+  right: .5rem;
   text-transform: lowercase;
-  top: -8px;
+  top: -0.5rem;
 }
 
 .highlight .lntable {
-  border-spacing: 0px;
+  border-spacing: 0rem;
   width: 100%;
 }
