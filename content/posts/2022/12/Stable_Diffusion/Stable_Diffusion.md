@@ -30,6 +30,16 @@ Para probar Stable Diffusion 2.0 debes seguir los siguientes pasos:
 1. Abre el cuaderno de [Google Colab](https://colab.research.google.com/github/qunash/stable-diffusion-2-gui/blob/main/stable_diffusion_2_0.ipynb#scrollTo=gId0-asCBVwL) creado por [anzorq](https://twitter.com/hahahahohohe)
 2. Haz click en el botón play de la celda 1, justo debajo de la celda de texto "Instalar dependencias", para instalar las dependencias necesarias.
 3. Una vez acabe de instalar las dependencias, pulsa el botón play de la celda 2, justo debajo de la celda de texto "Run the app", para ejecutar la aplicación.
-4. Una vez inicie la ejecución nos debería dar un enlace como este:
+4. Una vez inicie la ejecución nos debería dar una respuesta similar a esta donde ID es una combinación de letras y números:
+
+    ```
+    Running on public URL: <https://ID.gradio.live>
+    ```
+
+5. Copia la URL que aparece en la respuesta y pégala en tu navegador. Deberías ver una pantalla similar a esta:
+![Stable Diffusion GUI](/images/posts/2022/12/gui.png)
+6. Aqui ya solo quedaría probar la herramienta. Para ello, puedes usar una imagen o un texto. Para usar una imagen, pulsa el botón "Upload Image" y selecciona la imagen que quieras usar. Para usar un texto, pulsa el botón "Text Input" y escribe el texto que quieras usar. Una vez hayas seleccionado la imagen o el texto, pulsa el botón "Generate Image" para generar la imagen.
+7. Si quieres guardar la imagen, pulsa el botón derecho del ratón sobre la imagen y selecciona "Guardar imagen como...".
+8. Tambien puedes modificar los parametros de generación de la imagen para obtener resultados diferentes.
 
 Articulo publicado primero en [Blog | Usarral](https://blog.usarr.tech/2022/12/31/prueba-stable-diffusion-gratis-mediante-google-colab/)

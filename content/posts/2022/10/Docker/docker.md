@@ -94,7 +94,3 @@ docker rm web
 docker exec -ti web bash
 
 ```
-
-dsnkadn
-
-

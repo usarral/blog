@@ -76,8 +76,11 @@
   @media (min-width: 1600px) {
     #TableOfContents-container {
       display: block;
+      position: -webkit-sticky;
       position: sticky;
-      top: 200px;
+      padding: 1rem;
+      top: 1rem;
+      max-height: 20em;
     }
 
     #TableOfContents-container h3 {
@@ -90,6 +93,8 @@
       padding-left: 0;
       padding-bottom: 0;
       max-width: 200px;
+      display: flex;
+      flex-direction: column;
     }
 
     #TableOfContents ul li {
@@ -114,10 +119,12 @@
 
     #TableOfContents a {
       color: #555;
-      display: inline;
+      flex-wrap: nowrap;
       font-weight: 500;
       font-size: 12px;
       line-height: 1;
+      padding: 4px 8px;
+      border-radius: 312.5rem;
     }
 
     #TableOfContents a code {
