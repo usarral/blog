@@ -8,7 +8,7 @@ Blog realizado en la asignatura Desarrollo Web en Entorno Servidor.
 
 ## Despliegue
 
-El blog esta desplegado en Vercel mediante una Github Action la cual cuando se hace un push realiza un despliegue a la url ["blog.usarr.tech"](https://blog.usarr.tech)
+El blog esta desplegado en Vercel mediante una Github Action la cual cuando se hace un push realiza un despliegue a la url ["blog.usarral.com"](https://blog.usarral.com)
 
 Para la indexación de articulos hay que ejecutar, teniendo NodeJS instalado, el siguiente comando en la carpeta raiz del proyecto
 
