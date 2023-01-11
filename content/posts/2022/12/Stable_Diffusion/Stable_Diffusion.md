@@ -42,4 +42,4 @@ Para probar Stable Diffusion 2.0 debes seguir los siguientes pasos:
 7. Si quieres guardar la imagen, pulsa el botón derecho del ratón sobre la imagen y selecciona "Guardar imagen como...".
 8. Tambien puedes modificar los parametros de generación de la imagen para obtener resultados diferentes.
 
-Articulo publicado primero en [Blog | Usarral](https://blog.usarr.tech/2022/12/31/prueba-stable-diffusion-gratis-mediante-google-colab/)
+Articulo publicado primero en [Blog | Usarral](https://blog.usarral.com/2022/12/31/prueba-stable-diffusion-gratis-mediante-google-colab/)
