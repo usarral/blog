@@ -95,6 +95,65 @@
                     }
                 ]
             }
+        },
+        "en": {
+            "languageName": "en",
+            "languageIcon": "/images/en.png",
+            "title": "Blog | Usarral",
+            "weight": 0,
+            "params": {
+                "description": "My blog developed in the subject Development in Server Environment 2022-2023 at the CPIFP Los Enlaces",
+                "image": "/favicon/apple-touch-icon.png",
+                "cookieMessage": "This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish."
+            },
+            "menu": {
+                "topics": [
+                    {
+                        "identifier": "Mail",
+                        "name": "Contact",
+                        "title": "Contact me",
+                        "url": "mailto:hey@usarral.com",
+                        "weight": 2
+                    }
+                ],
+                "main": [
+                    {
+                        "identifier": "Mail",
+                        "name": "Contact",
+                        "title": "Contact me",
+                        "url": "mailto:hey@usarral.com",
+                        "weight": -112
+                    },
+                    {
+                        "identifier": "RSS",
+                        "name": "RSS",
+                        "title": "Website RSS",
+                        "url": "/index.xml",
+                        "weight": -111
+                    },
+                    {
+                        "identifier": "Github",
+                        "name": "Github",
+                        "title": "My Github Profile",
+                        "url": "https://github.com/usarral",
+                        "weight": -110
+                    },
+                    {
+                        "identifier": "Youtube",
+                        "name": "Youtube",
+                        "title": "My Youtube channel",
+                        "url": "https://www.youtube.com/channel/UCHarnqEHtcQ616mopL_pjmg/",
+                        "weight": -109
+                    },
+                    {
+                        "identifier": "Twitter",
+                        "name": "Twitter",
+                        "title": "My Twitter profile",
+                        "url": "https://twitter.com/usarral_dev",
+                        "weight": -108
+                    }
+                ]
+            }
         }
     }
 }
