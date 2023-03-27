@@ -1,5 +1,5 @@
 ---
-title: 'Despliegue de Aplicaciones Web'
+title: 'Despliegue'
 heading:  Despliegue
-description: Artículos del módulo Despliegue de Aplicaciones Web
+description: Artículos sobre despliegue
 ---
