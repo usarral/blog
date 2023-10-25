@@ -121,12 +121,17 @@ iframe {
 
 .header-inner {
   align-items: center;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: var(--p-header-bottom);
 }
-
+@media (max-width: 37.4rem){
+.header-inner{
+justify-content: center;
+}
+}
 #searchbox {
   display: none;
 }
