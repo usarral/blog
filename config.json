@@ -43,7 +43,7 @@
             "title": "Blog | Usarral",
             "weight": 0,
             "params": {
-                "description": "Blog desarrollado en la asignatura Desarrollo en Entorno Servidor 2022-2023 en el CPIFP Los Enlaces",
+                "description": "Personal en el que escribo sobre desarrollo web, programación, sistemas y más.",
                 "image": "/favicon/apple-touch-icon.png",
                 "cookieMessage": "Este sitio web utiliza cookies para mejorar su experiencia. Asumiremos que está de acuerdo con esto, pero puede optar por no participar si lo desea."
             },
@@ -102,7 +102,7 @@
             "title": "Blog | Usarral",
             "weight": 0,
             "params": {
-                "description": "My blog developed in the subject Development in Server Environment 2022-2023 at the CPIFP Los Enlaces",
+                "description": "Personal blog where I write about web development, programming, systems and more.",
                 "image": "/favicon/apple-touch-icon.png",
                 "cookieMessage": "This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if you wish."
             },
