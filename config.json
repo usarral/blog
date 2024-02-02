@@ -43,7 +43,7 @@
             "title": "Blog | Usarral",
             "weight": 0,
             "params": {
-                "description": "Personal en el que escribo sobre desarrollo web, programación, sistemas y más.",
+                "description": "Blog personal en el que escribo sobre desarrollo web, programación, sistemas y más.",
                 "image": "/favicon/apple-touch-icon.png",
                 "cookieMessage": "Este sitio web utiliza cookies para mejorar su experiencia. Asumiremos que está de acuerdo con esto, pero puede optar por no participar si lo desea."
             },
