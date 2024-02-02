@@ -10,3 +10,4 @@ package-lock.json
 .vscode
 .vercel
 .hugo_build.lock
+.idea
