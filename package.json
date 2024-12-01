@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/usarral/blog#readme",
   "devDependencies": {
-    "hugo-bin": "^0.92.3",
+    "hugo-bin": "^0.136.0",
     "standard": "^17.0.0"
   },
   "eslintConfig": {
